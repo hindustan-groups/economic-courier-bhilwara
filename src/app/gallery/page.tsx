@@ -29,10 +29,10 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/assets/business-fleet-3d.webp',
-        width: 1024,
-        height: 512,
-        alt: 'Economic Courier Bhilwara Operations Hub & Commercial Fleet Gallery',
+        url: '/assets/gallery/gallery-operations-hero.webp',
+        width: 2048,
+        height: 1152,
+        alt: 'Economic Courier Bhilwara Central Operations Hub, Air Cargo Flight & Commercial Delivery Fleet',
       },
     ],
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: 'Operations Gallery & Video Reels | Economic Courier Bhilwara',
     description:
       'Authentic video reels and verified operations archive from Economic Courier Bhilwara.',
-    images: ['/assets/business-fleet-3d.webp'],
+    images: ['/assets/gallery/gallery-operations-hero.webp'],
   },
   other: {
     'geo.region': 'IN-RJ',
@@ -76,7 +76,7 @@ const jsonLd = {
       '@id': 'https://www.economiccourierbhilwara.in/#business',
       name: 'Economic Courier / eCS World Wide Express',
       alternateName: 'Economic Courier Bhilwara',
-      image: 'https://www.economiccourierbhilwara.in/assets/business-fleet-3d.webp',
+      image: 'https://www.economiccourierbhilwara.in/assets/gallery/gallery-operations-hero.webp',
       telephone: '+91 89551 44444',
       url: 'https://www.economiccourierbhilwara.in',
       address: {

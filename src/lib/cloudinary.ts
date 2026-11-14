@@ -161,6 +161,10 @@ export const CLOUDINARY_MEDIA_REGISTRY: Record<string, { publicId: string; type:
     publicId: 'economic-courier/images/ecs-logo-header-webp',
     type: 'image',
   },
+  '/assets/gallery/gallery-operations-hero.webp': {
+    publicId: 'economic-courier/images/gallery-operations-hero',
+    type: 'image',
+  },
 };
 
 /**

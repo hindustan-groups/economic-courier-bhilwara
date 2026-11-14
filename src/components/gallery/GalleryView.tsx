@@ -26,6 +26,7 @@ import {
 } from 'lucide-react';
 import { InstagramIcon } from '@/components/common/InstagramIcon';
 import { BUSINESS_INFO } from '@/lib/constants';
+import { getMediaUrl } from '@/lib/cloudinary';
 
 // ─── Video Reels Data ──────────────────────────────────────────────────────────
 export interface GalleryVideo {
@@ -126,7 +127,7 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     id: 'photo-7',
     title: 'Commercial Multi-Axle Linehaul Trucks & Staging Bay',
     category: 'fleet',
-    imageSrc: '/assets/business-fleet-3d.webp',
+    imageSrc: '/assets/gallery/gallery-operations-hero.webp',
   },
   {
     id: 'photo-8',
@@ -226,7 +227,7 @@ function EditorialPhotoCard({
       } ${aspectClass}`}
     >
       <Image
-        src={photo.imageSrc}
+        src={getMediaUrl(photo.imageSrc, { type: 'image' })}
         alt={photo.title}
         fill
         priority={priority || index < 3}
@@ -497,13 +498,15 @@ export function GalleryView() {
       <section className="relative pt-4 sm:pt-6 lg:pt-8 pb-6 sm:pb-10 bg-white border-b border-slate-200">
         <div className="max-w-[1240px] xl:max-w-[1360px] 2xl:max-w-[1480px] min-[1800px]:max-w-[1560px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
           {/* Full-Width Panoramic Visual Banner Card (Pure Image Only) */}
-          <div className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-200 shadow-md bg-slate-950 aspect-[16/9] sm:aspect-[2/1]">
+          <div className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-200/90 shadow-md bg-slate-950 aspect-[16/9]">
             <Image
-              src="/assets/business-fleet-3d.webp"
-              alt="Economic Courier & eCS World Wide Express Bhilwara Operations Hub, Commercial Fleet & Dispatch Facility"
+              src={getMediaUrl('/assets/gallery/gallery-operations-hero.webp', { type: 'image' })}
+              alt="Economic Courier & eCS World Wide Express Bhilwara Central Operations Hub, Air Cargo Flight, Commercial Freight Trucks & Fleet Delivery"
+              title="Economic Courier Bhilwara — Express Doorstep & Global Air Logistics Network"
               fill
               priority
-              sizes="(max-width: 1240px) 100vw, 1240px"
+              quality={90}
+              sizes="(max-width: 640px) 100vw, (max-width: 1240px) 100vw, 1560px"
               className="object-cover object-center"
             />
           </div>
@@ -1030,7 +1033,7 @@ export function GalleryView() {
             {/* Photo Container */}
             <div className="relative w-full h-[70vh] sm:h-[80vh] flex items-center justify-center">
               <Image
-                src={filteredPhotos[lightboxIndex].imageSrc}
+                src={getMediaUrl(filteredPhotos[lightboxIndex].imageSrc, { type: 'image' })}
                 alt={filteredPhotos[lightboxIndex].title}
                 fill
                 priority
