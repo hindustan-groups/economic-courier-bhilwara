@@ -278,5 +278,15 @@
     "type": "image",
     "width": 1056,
     "height": 440
+  },
+  "/assets/gallery/gallery-operations-hero.webp": {
+    "localPath": "/assets/gallery/gallery-operations-hero.webp",
+    "publicId": "economic-courier/images/gallery-operations-hero",
+    "secureUrl": "https://res.cloudinary.com/a4pwyvog/image/upload/v1794662175/economic-courier/images/gallery-operations-hero.webp",
+    "bytes": 1190052,
+    "format": "webp",
+    "type": "image",
+    "width": 3072,
+    "height": 1728
   }
 }

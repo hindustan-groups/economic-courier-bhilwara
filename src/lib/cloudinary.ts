@@ -161,6 +161,10 @@ export const CLOUDINARY_MEDIA_REGISTRY: Record<string, { publicId: string; type:
     publicId: 'economic-courier/images/ecs-logo-header-webp',
     type: 'image',
   },
+  '/assets/gallery/gallery-operations-hero.webp': {
+    publicId: 'economic-courier/images/gallery-operations-hero',
+    type: 'image',
+  },
 };
 
 /**
@@ -210,7 +214,10 @@ export function getMediaUrl(
   // 1. High-fidelity versioned manifest check
   const manifestEntry = MANIFEST[localPath];
   if (manifestEntry && CLOUDINARY_CLOUD_NAME) {
-    const isGraphicBanner = localPath.includes('banner') || localPath.includes('how-shipping-works');
+    const isGraphicBanner =
+      localPath.includes('banner') ||
+      localPath.includes('how-shipping-works') ||
+      localPath.includes('gallery-operations-hero');
     const {
       quality = isGraphicBanner ? 100 : 'auto:best',
       format = 'auto',
