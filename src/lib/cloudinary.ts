@@ -214,7 +214,10 @@ export function getMediaUrl(
   // 1. High-fidelity versioned manifest check
   const manifestEntry = MANIFEST[localPath];
   if (manifestEntry && CLOUDINARY_CLOUD_NAME) {
-    const isGraphicBanner = localPath.includes('banner') || localPath.includes('how-shipping-works');
+    const isGraphicBanner =
+      localPath.includes('banner') ||
+      localPath.includes('how-shipping-works') ||
+      localPath.includes('gallery-operations-hero');
     const {
       quality = isGraphicBanner ? 100 : 'auto:best',
       format = 'auto',

@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/assets/gallery/gallery-operations-hero.webp',
-        width: 2048,
-        height: 1152,
+        width: 3072,
+        height: 1728,
         alt: 'Economic Courier Bhilwara Central Operations Hub, Air Cargo Flight & Commercial Delivery Fleet',
       },
     ],

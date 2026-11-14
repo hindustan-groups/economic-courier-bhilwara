@@ -500,12 +500,12 @@ export function GalleryView() {
           {/* Full-Width Panoramic Visual Banner Card (Pure Image Only) */}
           <div className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-200/90 shadow-md bg-slate-950 aspect-[16/9]">
             <Image
-              src={getMediaUrl('/assets/gallery/gallery-operations-hero.webp', { type: 'image' })}
+              src={getMediaUrl('/assets/gallery/gallery-operations-hero.webp', { type: 'image', quality: 100 })}
               alt="Economic Courier & eCS World Wide Express Bhilwara Central Operations Hub, Air Cargo Flight, Commercial Freight Trucks & Fleet Delivery"
               title="Economic Courier Bhilwara — Express Doorstep & Global Air Logistics Network"
               fill
               priority
-              quality={90}
+              unoptimized
               sizes="(max-width: 640px) 100vw, (max-width: 1240px) 100vw, 1560px"
               className="object-cover object-center"
             />

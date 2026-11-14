@@ -282,11 +282,11 @@
   "/assets/gallery/gallery-operations-hero.webp": {
     "localPath": "/assets/gallery/gallery-operations-hero.webp",
     "publicId": "economic-courier/images/gallery-operations-hero",
-    "secureUrl": "https://res.cloudinary.com/a4pwyvog/image/upload/v1794661468/economic-courier/images/gallery-operations-hero.webp",
-    "bytes": 351564,
+    "secureUrl": "https://res.cloudinary.com/a4pwyvog/image/upload/v1794662175/economic-courier/images/gallery-operations-hero.webp",
+    "bytes": 1190052,
     "format": "webp",
     "type": "image",
-    "width": 2048,
-    "height": 1152
+    "width": 3072,
+    "height": 1728
   }
 }
