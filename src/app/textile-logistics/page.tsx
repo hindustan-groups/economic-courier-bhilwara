@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { TextileLogisticsView } from '@/components/textiles/TextileLogisticsView';
 
 export const metadata: Metadata = {
-  title: 'Textile Fabric Sample Courier Bhilwara | Swatch & Shade Card Delivery',
+  title: 'Textile & Fabric Sample Courier',
   description:
-    'Dedicated textile courier service for Bhilwara weaving mills, garment exporters & fabric traders: express delivery of sample swatches, shade cards, suiting cuts & trade paperwork to Mumbai, Surat, Delhi & 220+ countries.',
+    'Specialized textile courier service for Bhilwara weaving mills and fabric traders: express delivery of sample swatches, shade cards, and trade documents.',
   keywords: [
     'best textile courier bhilwara',
     'economic courier bhilwara',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     canonical: '/textile-logistics',
   },
   openGraph: {
-    title: 'Textile Fabric Sample Courier Bhilwara | Swatch & Shade Card Delivery',
+    title: 'Textile & Fabric Sample Courier | Economic Courier Bhilwara',
     description:
       'Engineered for Bhilwara fabric & garment trade. Priority courier handling for fabric swatches, shade books, cut-length pieces, and commercial trade paperwork.',
     url: '/textile-logistics',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Textile Fabric Sample Courier Bhilwara | Swatch & Shade Card Delivery',
+    title: 'Textile & Fabric Sample Courier | Economic Courier Bhilwara',
     description:
       'Express courier handling for fabric swatch cards, sample books, and trade documents from Bhilwara.',
     images: ['/assets/og/economic-courier-social.jpg'],

@@ -149,7 +149,7 @@ export function HubLocationSection() {
                     Monday – Saturday: 9:30 AM – 8:30 PM
                   </p>
                   <p className="text-xs text-slate-500">
-                    Sunday: 10:00 AM – 4:00 PM (Emergency Dispatch Desk)
+                    Sunday: 10:00 AM – 2:00 PM (Emergency Dispatch Desk)
                   </p>
                 </div>
               </div>

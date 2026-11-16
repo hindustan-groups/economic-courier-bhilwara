@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { ContactView } from '@/components/contact/ContactView';
 
 export const metadata: Metadata = {
-  title: 'Contact Best Courier Service in Bhilwara | Economic Courier Hub',
+  title: 'Contact & Office Location',
   description:
-    'Contact Economic Courier & eCS World Wide Express — recognized as the best courier service in Bhilwara. Central Counter Opposite New Cloth Market, Pur Road / Station Sector. Call +91 89551 44444 or email economiccourierbhilwara@gmail.com for doorstep parcel pickups, rate quotes & express booking.',
+    'Contact Economic Courier Bhilwara: Opposite New Cloth Market, Pur Road. Call +91 89551 44444 for parcel bookings, doorstep pickups, and rate inquiries.',
   keywords: [
     'contact economic courier bhilwara',
     'best courier in bhilwara',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     canonical: '/contact',
   },
   openGraph: {
-    title: 'Contact Best Courier Service in Bhilwara | Economic Courier Hub',
+    title: 'Contact & Office Location | Economic Courier Bhilwara',
     description:
       'Direct customer inquiry desk in Bhilwara. Priority domestic parcels, international air cargo, and textile swatch sample shipping assistance.',
     url: '/contact',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact Best Courier Service in Bhilwara | Economic Courier Hub',
+    title: 'Contact & Office Location | Economic Courier Bhilwara',
     description:
       'Contact Economic Courier and eCS World Wide Express in Bhilwara: customer desk, consignment queries, and booking guidance.',
     images: ['/assets/og/economic-courier-social.jpg'],
@@ -107,7 +107,7 @@ const contactJsonLd = {
             '@type': 'OpeningHoursSpecification',
             dayOfWeek: ['Sunday'],
             opens: '10:00',
-            closes: '16:00',
+            closes: '14:00',
           },
         ],
       },
