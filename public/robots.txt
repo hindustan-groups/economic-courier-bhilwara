@@ -4,7 +4,17 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+Allow: /_next/static/
 Disallow: /_next/
+
+# Google Favicon & Image Crawler
+User-agent: Googlebot-Image
+Allow: /favicon*
+Allow: /icon*
+Allow: /apple-icon*
+Allow: /apple-touch-icon*
+Allow: /assets/
+Allow: /
 
 # Search Engine Crawlers
 User-agent: Googlebot
@@ -13,7 +23,7 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-# AI Answer Engines & Generative Search (AEO)
+# AI Answer Engines & Generative Search (AEO / GEO)
 User-agent: Google-Extended
 Allow: /
 

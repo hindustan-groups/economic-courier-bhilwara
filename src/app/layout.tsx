@@ -31,11 +31,11 @@ const siteUrl =
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Economic Courier Bhilwara | Best Courier Service in Bhilwara (Domestic & International)',
+    default: 'Economic Courier Bhilwara | Courier Services',
     template: '%s | Economic Courier Bhilwara',
   },
   description:
-    'Economic Courier (eCS World Wide Express) is the best courier service in Bhilwara, Rajasthan. Priority domestic parcel delivery across 19,000+ Indian pin codes, worldwide air cargo to 220+ countries, specialized textile fabric sample logistics, and doorstep parcel pickup across Bhilwara. Central office Opposite New Cloth Market, Pur Road. Call +91 89551 44444.',
+    'Economic Courier (eCS World Wide Express) provides reliable domestic parcel delivery, worldwide air cargo, and specialized textile sample courier services in Bhilwara.',
   keywords: [
     'economic courier bhilwara',
     'economic courier',
@@ -82,9 +82,9 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_IN',
     url: '/',
-    title: 'Economic Courier Bhilwara | Best Courier Service in Bhilwara',
+    title: 'Economic Courier Bhilwara | Courier Services',
     description:
-      'Top-rated courier service in Bhilwara, Rajasthan. Priority domestic parcels across 19,000+ pin codes, international air cargo across 220+ countries, textile fabric samples, and doorstep pickup.',
+      'Fast, dependable domestic express parcels, worldwide air cargo, and specialized textile sample courier services from Bhilwara, Rajasthan.',
     siteName: 'Economic Courier / eCS World Wide Express',
     images: [
       {
@@ -93,15 +93,15 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         type: 'image/jpeg',
-        alt: 'Economic Courier & eCS World Wide Express – Best Courier Service in Bhilwara',
+        alt: 'Economic Courier & eCS World Wide Express – Courier Services in Bhilwara',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Economic Courier Bhilwara | Best Courier Service in Bhilwara',
+    title: 'Economic Courier Bhilwara | Courier Services',
     description:
-      'Top-rated courier & air cargo service in Bhilwara, Rajasthan. Specialized textile fabric sample logistics, domestic express, and worldwide parcel delivery.',
+      'Fast, dependable domestic express parcels, worldwide air cargo, and specialized textile sample courier services from Bhilwara, Rajasthan.',
     images: ['/assets/og/economic-courier-social.jpg'],
   },
   robots: {
@@ -129,11 +129,14 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
-      { url: '/assets/logo/ecs-logo-192.png', sizes: '192x192', type: 'image/png' },
-      { url: '/assets/logo/ecs-logo-512.png', sizes: '512x512', type: 'image/png' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' },
+      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+      { url: '/favicon-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/favicon-512x512.png', sizes: '512x512', type: 'image/png' },
     ],
     apple: [
-      { url: '/assets/logo/ecs-logo-180.png', sizes: '180x180', type: 'image/png' },
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ],
     shortcut: '/favicon.ico',
   },
@@ -199,7 +202,7 @@ const schemaGraph = {
           '@type': 'OpeningHoursSpecification',
           dayOfWeek: ['Sunday'],
           opens: '10:00',
-          closes: '16:00',
+          closes: '14:00',
         },
       ],
       hasMap: 'https://maps.google.com/?q=25.3444,74.6366',

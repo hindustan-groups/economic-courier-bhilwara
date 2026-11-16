@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { BusinessSolutionsView } from '@/components/business/BusinessSolutionsView';
 
 export const metadata: Metadata = {
-  title: 'B2B Courier & Commercial Solutions Bhilwara | Economic Courier',
+  title: 'Commercial & B2B Logistics',
   description:
-    'Commercial logistics & corporate courier accounts for Bhilwara weaving mills, garment units, and retailers: Bulk parcel dispatches, scheduled RIICO pickups, trade accounts & customized billing solutions.',
+    'Corporate logistics & commercial courier accounts for Bhilwara mills, manufacturers, and retailers: scheduled pickups, bulk parcel dispatches & trade billing.',
   keywords: [
     'business courier bhilwara',
     'commercial logistics bhilwara',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: '/business-solutions',
   },
   openGraph: {
-    title: 'B2B Courier & Commercial Solutions Bhilwara | Economic Courier',
+    title: 'Commercial & B2B Logistics | Economic Courier Bhilwara',
     description:
       'Structured courier logistics for Bhilwara commerce: supporting textile weaving mills, garment units, retail merchants, and corporate industrial offices.',
     url: '/business-solutions',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'B2B Courier & Commercial Solutions Bhilwara | Economic Courier',
+    title: 'Commercial & B2B Logistics | Economic Courier Bhilwara',
     description:
       'Structured courier logistics for Bhilwara commerce: sample swatches, commercial parcels, and confidential business documents.',
     images: ['/assets/og/economic-courier-social.jpg'],

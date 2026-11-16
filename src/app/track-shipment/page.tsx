@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { TrackShipmentView } from '@/components/tracking/TrackShipmentView';
 
 export const metadata: Metadata = {
-  title: 'Track Shipment & Consignment Status | Economic Courier Bhilwara',
+  title: 'Track Shipment & Consignment',
   description:
-    'Track your consignment, AWB number, or booking docket status with Economic Courier / eCS World Wide Express Bhilwara. Real-time carrier movement and dispatch lookup.',
+    'Track your courier consignment, AWB docket number, or parcel dispatch status with Economic Courier / eCS World Wide Express Bhilwara.',
   keywords: [
     'track courier bhilwara',
     'consignment tracking bhilwara',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     canonical: '/track-shipment',
   },
   openGraph: {
-    title: 'Track Shipment & Consignment Status | Economic Courier Bhilwara',
+    title: 'Track Shipment & Consignment | Economic Courier Bhilwara',
     description:
       'Check consignment status, booking references, and carrier tracking advice for parcels dispatched via Economic Courier / eCS World Wide Express, Bhilwara.',
     url: '/track-shipment',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Track Shipment & Consignment Status | Economic Courier Bhilwara',
+    title: 'Track Shipment & Consignment | Economic Courier Bhilwara',
     description:
       'Consignment status lookup and booking advice for Economic Courier / eCS World Wide Express Bhilwara.',
     images: ['/assets/og/economic-courier-social.jpg'],

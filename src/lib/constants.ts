@@ -38,7 +38,7 @@ export const BUSINESS_DATA: BusinessData = {
   addressVerified: true,
 
   operatingHoursPlaceholder:
-    'Monday – Saturday: 9:30 AM – 8:30 PM [Pending Client Confirmation]',
+    'Monday – Saturday: 9:30 AM – 8:30 PM | Sunday: 10:00 AM – 2:00 PM (Emergency Dispatch Desk) [Pending Client Confirmation]',
   hoursVerified: false,
 
   trackingMethod: 'unknown',

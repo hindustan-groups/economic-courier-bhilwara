@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { ServicesView } from '@/components/services/ServicesView';
 
 export const metadata: Metadata = {
-  title: 'Best Courier & Air Cargo Services in Bhilwara | Economic Courier',
+  title: 'Courier & Cargo Services',
   description:
-    'Top-rated courier & cargo services in Bhilwara, Rajasthan by Economic Courier (eCS Express): Domestic Priority Express across 19,000+ pin codes, 220+ Countries International Air Cargo, Textile Mill Swatches, Heavy Freight & Doorstep Pickup.',
+    'Domestic express parcels across 19,000+ pin codes, worldwide air cargo to 220+ countries, and doorstep pickup services by Economic Courier Bhilwara.',
   keywords: [
     'best courier in bhilwara',
     'best courier service in bhilwara',
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     canonical: '/services',
   },
   openGraph: {
-    title: 'Best Courier & Air Cargo Services in Bhilwara | Economic Courier',
+    title: 'Courier & Cargo Services | Economic Courier Bhilwara',
     description:
-      'Explore confirmed courier and cargo services from Bhilwara: Priority domestic express, 220+ countries worldwide air cargo, textile mill samples, and heavy cargo linehauls.',
+      'Explore courier and cargo services from Bhilwara: Priority domestic express, 220+ countries worldwide air cargo, textile mill samples, and doorstep pickups.',
     url: '/services',
     type: 'website',
     images: [
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Best Courier & Air Cargo Services in Bhilwara | Economic Courier',
+    title: 'Courier & Cargo Services | Economic Courier Bhilwara',
     description:
       'Complete courier & air cargo services from Bhilwara: Domestic express, worldwide forwarding, and textile logistics.',
     images: ['/assets/og/economic-courier-social.jpg'],

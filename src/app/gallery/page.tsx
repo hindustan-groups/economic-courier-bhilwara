@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { GalleryView } from '@/components/gallery/GalleryView';
 
 export const metadata: Metadata = {
-  title: 'Operations Gallery & Video Reels | Economic Courier Bhilwara',
+  title: 'Operations Hub & Fleet Gallery',
   description:
-    'Authentic ground operations gallery and video reels from Economic Courier & eCS World Wide Express, Bhilwara. Central intake counter, sorting crew, textile sample packaging, and daily linehaul dispatch opposite New Cloth Market.',
+    'Explore photo and video highlights of Economic Courier Bhilwara: central parcel intake counter, sorting hub operations, and express dispatch fleet.',
   keywords: [
     'economic courier gallery bhilwara',
     'ecs express reels',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     canonical: '/gallery',
   },
   openGraph: {
-    title: 'Operations Gallery & Video Reels | Economic Courier Bhilwara',
+    title: 'Operations Hub & Fleet Gallery | Economic Courier Bhilwara',
     description:
       'Genuine ground operations archive: walk-in intake counter, parcel sorting, textile swatch packaging lab, and express fleet dispatch in Bhilwara.',
     url: '/gallery',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Operations Gallery & Video Reels | Economic Courier Bhilwara',
+    title: 'Operations Hub & Fleet Gallery | Economic Courier Bhilwara',
     description:
       'Authentic video reels and verified operations archive from Economic Courier Bhilwara.',
     images: ['/assets/gallery/gallery-operations-hero.webp'],
@@ -96,8 +96,14 @@ const jsonLd = {
         {
           '@type': 'OpeningHoursSpecification',
           dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-          opens: '10:00',
+          opens: '09:30',
           closes: '20:30',
+        },
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Sunday'],
+          opens: '10:00',
+          closes: '14:00',
         },
       ],
     },
