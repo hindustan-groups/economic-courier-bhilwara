@@ -289,41 +289,7 @@ export function HubLocationSection() {
                 </button>
               )}
 
-              {/* Floating Sleek Hub Location Badge with Authentic eCS Brand Logo */}
-              <div className="absolute top-3 left-3 sm:top-4 sm:left-4 z-10 bg-white/95 backdrop-blur-md rounded-2xl px-3 sm:px-3.5 py-2 sm:py-2.5 border border-slate-200/90 shadow-md flex items-center gap-2.5 sm:gap-3 pointer-events-auto">
-                <div className="p-1 bg-slate-50 border border-slate-100 rounded-lg shrink-0">
-                  <Image
-                    src={getMediaUrl('/assets/logo/ecs-logo-header.webp', { type: 'image' })}
-                    alt="eCS Economic Courier Bhilwara Official Logo"
-                    title="Economic Courier Bhilwara Central Hub"
-                    width={72}
-                    height={30}
-                    className="h-5 sm:h-6 w-auto object-contain"
-                  />
-                </div>
-                <div className="flex flex-col">
-                  <div className="flex items-center gap-1.5">
-                    <h4 className="text-xs sm:text-sm font-black text-[#1E3A8A] leading-tight">
-                      Economic Courier Bhilwara
-                    </h4>
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse shrink-0" title="Dispatch counter active" />
-                  </div>
-                  <div className="flex items-center gap-1.5 mt-0.5 text-[10.5px] sm:text-[11px] font-bold">
-                    <span className="text-amber-500 font-extrabold">★ 4.9</span>
-                    <span className="text-slate-500 font-medium">(396+ Google Reviews)</span>
-                  </div>
-                </div>
-                <a
-                  href={googleMapsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="ml-1 inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-[#1E3A8A] hover:bg-[#1e293b] text-white text-[11px] font-bold shadow-2xs transition-colors shrink-0"
-                  title="Open verified location in Google Maps"
-                >
-                  <span>Maps</span>
-                  <ExternalLink className="w-3 h-3 opacity-80" />
-                </a>
-              </div>
+
 
               {/* Proximity Corridor Chips Overlay at Bottom */}
               <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 z-10 flex flex-wrap items-center gap-1.5 sm:gap-2 pointer-events-none">
