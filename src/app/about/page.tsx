@@ -14,6 +14,8 @@ export const metadata: Metadata = {
     'courier office bhilwara',
     'textile courier bhilwara history',
     'chandra shekhar panecha economic courier',
+    'chandra shekhar panecha bhilwara',
+    'chandra shekhar panecha founder',
     'courier company bhilwara rajasthan',
     'pur road courier hub background',
   ],
