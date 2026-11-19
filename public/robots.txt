@@ -54,3 +54,4 @@ Allow: /
 # Canonical Sitemap & Host
 Host: https://www.economiccourierbhilwara.in
 Sitemap: https://www.economiccourierbhilwara.in/sitemap.xml
+Sitemap: https://www.economiccourierbhilwara.in/video-sitemap.xml
