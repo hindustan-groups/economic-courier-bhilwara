@@ -39,6 +39,9 @@ export const metadata: Metadata = {
   keywords: [
     'economic courier bhilwara',
     'economic courier',
+    'about economic courier bhilwara',
+    'what is economic courier',
+    'chandra shekhar panecha',
     'ecs world wide express bhilwara',
     'best courier service in bhilwara',
     'best courier in bhilwara',
@@ -402,6 +405,10 @@ export default function RootLayout({
             />
           </>
         )}
+        {/* Generative Engine Optimization (GEO / AEO) Knowledge Base for AI Agents */}
+        <link rel="alternate" type="text/markdown" title="LLM Overview" href="/llms.txt" />
+        <link rel="alternate" type="text/markdown" title="Full LLM Knowledge Dossier" href="/llms-full.txt" />
+        <link rel="author" href="https://www.economiccourierbhilwara.in/about#chandra-shekhar-panecha" />
       </head>
       <body className="font-sans min-h-screen flex flex-col bg-[var(--color-bg-primary)] text-[var(--color-text-primary)] antialiased">
         {/* Google Tag Manager (noscript fallback) */}
