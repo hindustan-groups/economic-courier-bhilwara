@@ -14,7 +14,6 @@ import {
   Truck,
   ShieldCheck,
 } from 'lucide-react';
-import { BUSINESS_INFO } from '@/lib/constants';
 import { getMediaUrl } from '@/lib/cloudinary';
 
 export function HubLocationSection() {
@@ -22,11 +21,12 @@ export function HubLocationSection() {
     'Opposite New Cloth Market, Railway Staff Quarter Area, Bhilwara, Rajasthan 311001';
   const verifiedLandmark =
     'Opposite New Cloth Market · Pur Road / Railway Station Sector';
-  const googleMapsUrl = BUSINESS_INFO.googleMapsUrl;
+  const googleMapsUrl = 'https://www.google.com/maps?cid=10996568267146601883';
+  const directionsUrl = 'https://www.google.com/maps/dir/?api=1&destination=Economic+Courier+Bhilwara';
   const phoneNumber = '+91 89551 44444';
 
   const mapEmbedUrl =
-    'https://maps.google.com/maps?q=Economic+Courier+Opposite+New+Cloth+Market+Bhilwara+Rajasthan&t=&z=15&ie=UTF8&iwloc=&output=embed';
+    'https://maps.google.com/maps?cid=10996568267146601883&hl=en&z=16&output=embed';
 
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const [isMapVisible, setIsMapVisible] = useState(false);
@@ -198,7 +198,7 @@ export function HubLocationSection() {
             {/* Actions: Get Directions + Prepare Inquiry */}
             <div className="pt-6 mt-6 border-t border-slate-100 flex flex-col sm:flex-row gap-3">
               <a
-                href={googleMapsUrl}
+                href={directionsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 inline-flex items-center justify-center gap-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white text-sm font-bold px-5 py-3 rounded-xl shadow-xs hover:shadow-md transition-all active:scale-95 text-center cursor-pointer"
@@ -274,6 +274,27 @@ export function HubLocationSection() {
                 <div className="flex items-center gap-1 mt-1 text-[10.5px] sm:text-[11px] font-bold">
                   <span className="text-amber-800 font-extrabold">★ 4.9</span>
                   <span className="text-slate-600 font-medium">(396+ Google Reviews)</span>
+                </div>
+                <div className="flex items-center gap-2 mt-2.5 pt-2.5 border-t border-slate-100">
+                  <a
+                    href={googleMapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#1E3A8A] hover:bg-[#1e293b] text-white text-[11px] font-bold shadow-xs transition-colors"
+                  >
+                    <span>Open in Maps</span>
+                    <ExternalLink className="w-3 h-3 opacity-80" />
+                  </a>
+                  <a
+                    href={directionsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-1 px-2.5 py-1.5 rounded-lg bg-red-50 hover:bg-red-100 text-[#DC2626] border border-red-200 text-[11px] font-bold transition-colors"
+                    title="Get Driving Directions"
+                  >
+                    <Navigation className="w-3.5 h-3.5" />
+                    <span>Directions</span>
+                  </a>
                 </div>
               </div>
 
