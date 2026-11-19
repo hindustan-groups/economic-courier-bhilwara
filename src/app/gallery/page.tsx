@@ -117,6 +117,66 @@ const jsonLd = {
         '@id': 'https://www.economiccourierbhilwara.in/#business',
       },
     },
+    {
+      '@type': 'VideoObject',
+      name: 'Inside the Bhilwara Hub: Counter Intake & Weight Verification',
+      description:
+        'Direct walk-in intake, calibrated electronic scale verification, and parcel logging at Economic Courier Bhilwara hub opposite New Cloth Market.',
+      thumbnailUrl: 'https://www.economiccourierbhilwara.in/assets/social/reel-inside-ecs.jpg',
+      uploadDate: '2026-11-01T09:30:00+05:30',
+      contentUrl: 'https://www.economiccourierbhilwara.in/assets/social/reel-1-inside-ecs.mp4',
+      embedUrl: 'https://www.economiccourierbhilwara.in/gallery',
+      duration: 'PT18S',
+      inLanguage: 'hi-IN',
+      publisher: {
+        '@id': 'https://www.economiccourierbhilwara.in/#business',
+      },
+    },
+    {
+      '@type': 'VideoObject',
+      name: '#TeamECS Ground Crew & Parcel Sorting',
+      description:
+        'Dedicated courier operations crew sorting domestic and international parcels for evening dispatch in Bhilwara.',
+      thumbnailUrl: 'https://www.economiccourierbhilwara.in/assets/social/reel-team.jpg',
+      uploadDate: '2026-11-01T10:00:00+05:30',
+      contentUrl: 'https://www.economiccourierbhilwara.in/assets/social/reel-2-team.mp4',
+      embedUrl: 'https://www.economiccourierbhilwara.in/gallery',
+      duration: 'PT22S',
+      inLanguage: 'hi-IN',
+      publisher: {
+        '@id': 'https://www.economiccourierbhilwara.in/#business',
+      },
+    },
+    {
+      '@type': 'VideoObject',
+      name: 'Industrial Fabric Packaging & Waterproof Sealing',
+      description:
+        'Specialized textile sample packaging with moisture-proof poly-wrap and strapping for fabric swatches and shade cards.',
+      thumbnailUrl: 'https://www.economiccourierbhilwara.in/assets/social/reel-packing.jpg',
+      uploadDate: '2026-11-01T11:00:00+05:30',
+      contentUrl: 'https://www.economiccourierbhilwara.in/assets/social/reel-3-packing.mp4',
+      embedUrl: 'https://www.economiccourierbhilwara.in/gallery',
+      duration: 'PT19S',
+      inLanguage: 'hi-IN',
+      publisher: {
+        '@id': 'https://www.economiccourierbhilwara.in/#business',
+      },
+    },
+    {
+      '@type': 'VideoObject',
+      name: 'Evening Linehaul Dispatch to Western India',
+      description:
+        'Night express cargo vehicle loading and dispatch connecting Bhilwara to Jaipur, Ahmedabad, Surat, and Mumbai.',
+      thumbnailUrl: 'https://www.economiccourierbhilwara.in/assets/social/reel-dispatch.jpg',
+      uploadDate: '2026-11-01T18:00:00+05:30',
+      contentUrl: 'https://www.economiccourierbhilwara.in/assets/social/reel-4-dispatch.mp4',
+      embedUrl: 'https://www.economiccourierbhilwara.in/gallery',
+      duration: 'PT25S',
+      inLanguage: 'hi-IN',
+      publisher: {
+        '@id': 'https://www.economiccourierbhilwara.in/#business',
+      },
+    },
   ],
 };
 
