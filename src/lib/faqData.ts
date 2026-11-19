@@ -33,6 +33,15 @@ export interface FAQItem {
  */
 export const FAQ_ITEMS: FAQItem[] = [
   {
+    id: 'faq-what-is-economic-courier',
+    category: 'hub',
+    categoryLabel: 'About Company',
+    question: 'What is Economic Courier (eCS World Wide Express) in Bhilwara?',
+    answer:
+      'Economic Courier (operating in strategic partnership with eCS World Wide Express) is the premier courier, air cargo, and express logistics provider headquartered Opposite New Cloth Market on Pur Road, Bhilwara. Directed by supply chain leader Mr. Chandra Shekhar Panecha (35+ years experience), we specialize in priority domestic parcels across 19,000+ Indian pin codes, worldwide air cargo to 220+ countries, specialized textile fabric sample swatches for Bhilwara weaving mills, and free doorstep pickups.',
+    highlight: 'Central Bhilwara Hub · 35+ Years Logistics Leadership · Domestic & Worldwide Express',
+  },
+  {
     id: 'faq-location-timings',
     category: 'hub',
     categoryLabel: 'Hub Location & Hours',

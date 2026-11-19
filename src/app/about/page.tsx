@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     'Learn about Economic Courier & eCS World Wide Express in Bhilwara. Central operations hub Opposite New Cloth Market on Pur Road offering trusted courier logistics.',
   keywords: [
     'about economic courier bhilwara',
+    'what is economic courier',
+    'who is economic courier bhilwara',
     'best courier in bhilwara',
     'best courier service in bhilwara',
     'economic courier bhilwara',
