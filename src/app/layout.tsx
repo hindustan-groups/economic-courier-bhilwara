@@ -176,6 +176,19 @@ const schemaGraph = {
         'https://www.economiccourierbhilwara.in/assets/og/economic-courier-social.jpg',
         'https://www.economiccourierbhilwara.in/assets/office/economic-courier-bhilwara-storefront.webp',
       ],
+      founder: {
+        '@type': 'Person',
+        '@id': 'https://www.economiccourierbhilwara.in/about#chandra-shekhar-panecha',
+        name: 'Chandra Shekhar Panecha',
+        jobTitle: 'Founder & Independent Director',
+        image: 'https://www.economiccourierbhilwara.in/assets/team/chandra-shekhar-panecha.webp',
+        description:
+          'Supply chain specialist with over 35 years of logistics experience, leading Economic Courier and eCS World Wide Express in Bhilwara, Rajasthan.',
+        sameAs: [
+          'https://www.instagram.com/chandrashekharpanecha',
+          'https://youtube.com/@chandrashekharpanecha',
+        ],
+      },
       telephone: '+91 89551 44444',
       email: 'economiccourierbhilwara@gmail.com',
       address: {
