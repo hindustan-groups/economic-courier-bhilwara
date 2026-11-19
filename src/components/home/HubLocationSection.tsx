@@ -14,7 +14,6 @@ import {
   Truck,
   ShieldCheck,
 } from 'lucide-react';
-import { BUSINESS_INFO } from '@/lib/constants';
 import { getMediaUrl } from '@/lib/cloudinary';
 
 export function HubLocationSection() {
@@ -22,11 +21,12 @@ export function HubLocationSection() {
     'Opposite New Cloth Market, Railway Staff Quarter Area, Bhilwara, Rajasthan 311001';
   const verifiedLandmark =
     'Opposite New Cloth Market · Pur Road / Railway Station Sector';
-  const googleMapsUrl = BUSINESS_INFO.googleMapsUrl;
+  const googleMapsUrl = 'https://www.google.com/maps?cid=10996568267146601883';
+  const directionsUrl = 'https://www.google.com/maps/dir/?api=1&destination=Economic+Courier+Bhilwara';
   const phoneNumber = '+91 89551 44444';
 
   const mapEmbedUrl =
-    'https://maps.google.com/maps?q=Economic+Courier+Opposite+New+Cloth+Market+Bhilwara+Rajasthan&t=&z=15&ie=UTF8&iwloc=&output=embed';
+    'https://maps.google.com/maps?cid=10996568267146601883&hl=en&z=16&output=embed';
 
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const [isMapVisible, setIsMapVisible] = useState(false);
@@ -101,21 +101,52 @@ export function HubLocationSection() {
               LEFT CARD: Verified Hub Details, Hours, Phone & Actions
               ========================================================= */}
           <div className="lg:col-span-5 bg-white rounded-3xl p-6 sm:p-7 lg:p-8 border border-slate-200/90 shadow-xs flex flex-col justify-between">
-            <div className="space-y-6">
-              {/* Hub Title & Status */}
-              <div className="flex items-center justify-between gap-3 pb-5 border-b border-slate-100">
-                <div>
-                  <h3 className="text-lg sm:text-xl font-black text-[#1E3A8A] tracking-tight">
-                    Economic Courier · Central Hub
-                  </h3>
-                  <p className="text-xs text-slate-500 font-medium mt-0.5">
-                    Official eCS World Wide Express Dispatch Office
-                  </p>
+            <div className="space-y-5">
+              {/* Hub Title, Official Logo & Status */}
+              <div className="flex items-start justify-between gap-3 pb-4 border-b border-slate-100">
+                <div className="flex items-center gap-3">
+                  <div className="p-1.5 bg-slate-50 border border-slate-200/80 rounded-xl shrink-0">
+                    <Image
+                      src={getMediaUrl('/assets/logo/ecs-logo-header.webp', { type: 'image' })}
+                      alt="eCS Economic Courier Official Logo"
+                      title="Economic Courier & eCS World Wide Express Bhilwara"
+                      width={88}
+                      height={38}
+                      className="h-8 w-auto object-contain"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-lg sm:text-xl font-black text-[#1E3A8A] tracking-tight">
+                      Economic Courier · Central Hub
+                    </h3>
+                    <p className="text-xs text-slate-500 font-medium mt-0.5">
+                      Official eCS World Wide Express Dispatch Office
+                    </p>
+                  </div>
                 </div>
                 <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-[11px] font-bold shrink-0">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse" />
                   <span>Open Now</span>
                 </div>
+              </div>
+
+              {/* Verified Google Reviews Badge */}
+              <div className="flex items-center justify-between px-3.5 py-2 bg-amber-50/70 border border-amber-200/60 rounded-xl text-xs font-semibold text-amber-950">
+                <div className="flex items-center gap-1.5">
+                  <span className="text-amber-500 font-black">★★★★★</span>
+                  <span className="font-extrabold text-slate-900">4.9 / 5.0</span>
+                  <span className="text-slate-400">·</span>
+                  <span className="text-slate-600 font-medium">396+ Verified Google Reviews</span>
+                </div>
+                <a
+                  href={googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[11px] font-bold text-[#1E3A8A] hover:text-[#DC2626] flex items-center gap-0.5 transition-colors"
+                >
+                  <span>Google Listing</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
               </div>
 
               {/* 1. Address & Landmark */}
@@ -198,7 +229,7 @@ export function HubLocationSection() {
             {/* Actions: Get Directions + Prepare Inquiry */}
             <div className="pt-6 mt-6 border-t border-slate-100 flex flex-col sm:flex-row gap-3">
               <a
-                href={googleMapsUrl}
+                href={directionsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 inline-flex items-center justify-center gap-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white text-sm font-bold px-5 py-3 rounded-xl shadow-xs hover:shadow-md transition-all active:scale-95 text-center cursor-pointer"
@@ -258,24 +289,7 @@ export function HubLocationSection() {
                 </button>
               )}
 
-              {/* Floating Top-Left Hub Badge Overlay */}
-              <div className="absolute top-3 left-3 sm:top-4 sm:left-4 z-10 max-w-[calc(100%-1.5rem)] sm:max-w-xs bg-white/95 backdrop-blur-md rounded-2xl p-2.5 sm:p-3.5 border border-slate-200/80 shadow-md pointer-events-auto">
-                <div className="flex items-center gap-2 mb-1">
-                  <div className="w-6 h-6 rounded-lg bg-red-600 text-white flex items-center justify-center font-bold text-xs shrink-0">
-                    eCS
-                  </div>
-                  <h4 className="text-xs sm:text-sm font-black text-[#1E3A8A] leading-tight">
-                    Economic Courier Bhilwara
-                  </h4>
-                </div>
-                <p className="text-[11px] text-slate-600 leading-snug">
-                  Opposite New Cloth Market, Bhilwara
-                </p>
-                <div className="flex items-center gap-1 mt-1 text-[10.5px] sm:text-[11px] font-bold">
-                  <span className="text-amber-800 font-extrabold">★ 4.9</span>
-                  <span className="text-slate-600 font-medium">(396+ Google Reviews)</span>
-                </div>
-              </div>
+
 
               {/* Proximity Corridor Chips Overlay at Bottom */}
               <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 z-10 flex flex-wrap items-center gap-1.5 sm:gap-2 pointer-events-none">
