@@ -277,20 +277,27 @@ export default function HomePage() {
             </div>
 
             {/* Right Hero Image Card (Authentic Bhilwara Central Hub Storefront & Founder Photo) */}
-            <div className="lg:col-span-6 relative flex justify-center lg:justify-end">
-              <div className="relative w-full max-w-[580px] group">
-                <Image
-                  src={getMediaUrl('/assets/hero/hero-economic-courier-bhilwara-hub.webp', { type: 'image' })}
-                  alt="Economic Courier central booking hub storefront Opposite New Cloth Market on Pur Road Bhilwara, with founder Chandra Shekhar Panecha"
-                  title="Economic Courier Bhilwara — Central Booking Hub & Storefront, Pur Road (Founder Chandra Shekhar Panecha)"
-                  width={640}
-                  height={360}
-                  quality={90}
-                  priority
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 580px"
-                  style={{ aspectRatio: '16/9' }}
-                  className="w-full h-auto object-cover rounded-3xl shadow-[0_16px_48px_rgba(15,23,42,0.10)] border border-slate-200/90 group-hover:shadow-[0_20px_56px_rgba(15,23,42,0.15)] transition-all duration-300"
-                />
+            <div className="lg:col-span-6 relative flex justify-center lg:justify-end items-center">
+              <div className="relative w-full max-w-[540px] xl:max-w-[580px] rounded-[28px] p-2 sm:p-2.5 bg-white border border-slate-200/90 shadow-[0_20px_50px_rgba(15,23,42,0.12)] hover:shadow-[0_24px_60px_rgba(15,23,42,0.16)] transition-all duration-300">
+                <div className="relative w-full overflow-hidden rounded-[20px] sm:rounded-[22px] bg-slate-100">
+                  <Image
+                    src={getMediaUrl('/assets/hero/hero-economic-courier-bhilwara-hub.webp', { type: 'image' })}
+                    alt="Economic Courier central booking hub storefront Opposite New Cloth Market on Pur Road Bhilwara, with founder Chandra Shekhar Panecha"
+                    title="Economic Courier Bhilwara — Central Booking Hub & Storefront, Pur Road (Founder Chandra Shekhar Panecha)"
+                    width={784}
+                    height={576}
+                    quality={95}
+                    priority
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 580px"
+                    style={{ aspectRatio: '784/576' }}
+                    className="w-full h-auto object-cover block transition-transform duration-500 hover:scale-[1.02]"
+                  />
+                  {/* Subtle Authentic Hub Badge */}
+                  <div className="absolute bottom-3 left-3 sm:bottom-3.5 sm:left-3.5 z-10 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900/85 backdrop-blur-md border border-white/15 text-white text-[11px] font-bold shadow-md pointer-events-none">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    <span>Central Hub · Pur Road, Bhilwara</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
