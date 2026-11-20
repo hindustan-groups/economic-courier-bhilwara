@@ -147,9 +147,9 @@ export default function HomePage() {
         className="relative pt-6 pb-8 lg:pt-10 lg:pb-12 overflow-hidden bg-[radial-gradient(ellipse_at_top_left,#EBF5FB_0%,#F8FBFE_50%,#FFFFFF_100%)]"
       >
         <div className="max-w-[1240px] xl:max-w-[1360px] 2xl:max-w-[1480px] min-[1800px]:max-w-[1560px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-stretch">
             {/* Left Content Column */}
-            <div className="lg:col-span-6 space-y-5">
+            <div className="lg:col-span-6 space-y-5 flex flex-col justify-center">
               {/* Location Badge & Authority Kicker */}
               <div className="flex flex-wrap items-center gap-2">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-red-50 via-white to-red-50/50 border border-red-200/80 text-red-700 text-[11px] font-extrabold tracking-widest uppercase shadow-xs ">
@@ -276,21 +276,21 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right Hero Image Card (Optimized WebP with preserved layout) */}
-            <div className="lg:col-span-6 relative flex justify-center lg:justify-end ">
-              <div className="relative w-full max-w-[560px]">
-                <Image
-                  src={getMediaUrl('/assets/hero/hero-courier.webp', { type: 'image' })}
-                  alt="Economic Courier delivery staff with branded eCS van and parcel box delivering in Bhilwara"
-                  title="Economic Courier Bhilwara — Express Doorstep Parcel Delivery Service"
-                  width={580}
-                  height={390}
-                  quality={85}
-                  priority
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 560px"
-                  style={{ aspectRatio: '580/390' }}
-                  className="w-full h-auto object-contain rounded-3xl shadow-[0_12px_40px_rgba(15,23,42,0.06)] border border-slate-100/80"
-                />
+            {/* Right Hero Image Card (Authentic Bhilwara Central Hub Storefront Photo with Brand Red Border Line) */}
+            <div className="lg:col-span-6 relative flex flex-col justify-center">
+              <div className="relative w-full h-full min-h-[360px] sm:min-h-[420px] lg:min-h-[450px] xl:min-h-[480px] rounded-[28px] sm:rounded-[32px] p-2 sm:p-2.5 bg-white border-2 border-[#DC2626] shadow-[0_20px_50px_rgba(220,38,38,0.12)] hover:shadow-[0_24px_60px_rgba(220,38,38,0.18)] transition-all duration-300 flex flex-col">
+                <div className="relative w-full h-full flex-1 overflow-hidden rounded-[20px] sm:rounded-[24px] bg-slate-100 min-h-[340px] sm:min-h-[400px] lg:min-h-[430px] xl:min-h-[460px]">
+                  <Image
+                    src={getMediaUrl('/assets/hero/hero-economic-courier-bhilwara-hub.webp', { type: 'image' })}
+                    alt="Economic Courier central dispatch and booking hub storefront Opposite New Cloth Market on Pur Road Bhilwara, with eCS international express logistics counter"
+                    title="Economic Courier Bhilwara Central Booking Hub — Opposite New Cloth Market, Pur Road | eCS World Wide Express"
+                    fill
+                    quality={100}
+                    priority
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 720px"
+                    className="object-cover object-center block transition-transform duration-500 hover:scale-[1.01]"
+                  />
+                </div>
               </div>
             </div>
           </div>
