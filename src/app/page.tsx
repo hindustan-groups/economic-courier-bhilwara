@@ -483,19 +483,33 @@ export default function HomePage() {
       <section id="about" className="py-8 sm:py-12 lg:py-16 scroll-mt-20 sm:scroll-mt-24">
         <div className="max-w-[1240px] xl:max-w-[1360px] 2xl:max-w-[1480px] min-[1800px]:max-w-[1560px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Left Photo: Authentic Central Bhilwara Office Storefront */}
-            <div className="lg:col-span-6 relative flex justify-center lg:justify-start">
+            {/* Left Photo: Authentic Central Bhilwara Office Storefront with Branded Red & Blue Line Accent */}
+            <div className="lg:col-span-6 relative flex flex-col justify-center items-center lg:items-start">
               <div className="relative w-full max-w-[540px]">
-                <Image
-                  src={getMediaUrl('/assets/office/economic-courier-bhilwara-hub-storefront.webp', { type: 'image' })}
-                  alt="Economic Courier Bhilwara central booking hub and storefront office Opposite New Cloth Market on Pur Road Bhilwara, with walk-in parcel intake counter"
-                  title="Economic Courier Bhilwara — Central Booking Hub & Storefront Counter, Pur Road | eCS World Wide Express"
-                  width={1024}
-                  height={575}
-                  quality={100}
-                  loading="lazy"
-                  className="w-full h-auto object-cover block mx-auto rounded-2xl shadow-[0_12px_36px_rgba(15,23,42,0.12)] border border-slate-200/90"
-                />
+                {/* Dual Red & Blue Border Frame Container */}
+                <div className="relative p-[2.5px] rounded-[26px] sm:rounded-[30px] bg-gradient-to-r from-[#DC2626] via-[#E11D48] to-[#1E3A8A] shadow-[0_20px_50px_rgba(30,58,138,0.12)]">
+                  <div className="relative rounded-[24px] sm:rounded-[28px] overflow-hidden bg-white p-1.5 sm:p-2">
+                    <div className="relative w-full overflow-hidden rounded-[18px] sm:rounded-[22px]">
+                      <Image
+                        src={getMediaUrl('/assets/office/economic-courier-bhilwara-hub-storefront.webp', { type: 'image' })}
+                        alt="Economic Courier Bhilwara central booking hub and storefront office Opposite New Cloth Market on Pur Road Bhilwara, with walk-in parcel intake counter"
+                        title="Economic Courier Bhilwara — Central Booking Hub & Storefront Counter, Pur Road | eCS World Wide Express"
+                        width={1024}
+                        height={575}
+                        quality={100}
+                        loading="lazy"
+                        className="w-full h-auto object-cover block mx-auto transition-transform duration-500 hover:scale-[1.01]"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Branded Red & Blue Accent Line underneath the image card */}
+                <div className="mt-3.5 sm:mt-4 flex items-center gap-2 w-full px-1">
+                  <div className="h-1.5 flex-1 rounded-full bg-[#DC2626] shadow-[0_2px_8px_rgba(220,38,38,0.25)]" />
+                  <div className="w-2 h-2 rounded-full bg-slate-300" />
+                  <div className="h-1.5 flex-1 rounded-full bg-[#1E3A8A] shadow-[0_2px_8px_rgba(30,58,138,0.25)]" />
+                </div>
               </div>
             </div>
 
