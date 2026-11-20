@@ -276,20 +276,20 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right Hero Image Card (Optimized WebP with preserved layout) */}
-            <div className="lg:col-span-6 relative flex justify-center lg:justify-end ">
-              <div className="relative w-full max-w-[560px]">
+            {/* Right Hero Image Card (Authentic Bhilwara Central Hub Storefront & Founder Photo) */}
+            <div className="lg:col-span-6 relative flex justify-center lg:justify-end">
+              <div className="relative w-full max-w-[580px] group">
                 <Image
-                  src={getMediaUrl('/assets/hero/hero-courier.webp', { type: 'image' })}
-                  alt="Economic Courier delivery staff with branded eCS van and parcel box delivering in Bhilwara"
-                  title="Economic Courier Bhilwara — Express Doorstep Parcel Delivery Service"
-                  width={580}
-                  height={390}
-                  quality={85}
+                  src={getMediaUrl('/assets/hero/hero-economic-courier-bhilwara-hub.webp', { type: 'image' })}
+                  alt="Economic Courier central booking hub storefront Opposite New Cloth Market on Pur Road Bhilwara, with founder Chandra Shekhar Panecha"
+                  title="Economic Courier Bhilwara — Central Booking Hub & Storefront, Pur Road (Founder Chandra Shekhar Panecha)"
+                  width={640}
+                  height={360}
+                  quality={90}
                   priority
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 560px"
-                  style={{ aspectRatio: '580/390' }}
-                  className="w-full h-auto object-contain rounded-3xl shadow-[0_12px_40px_rgba(15,23,42,0.06)] border border-slate-100/80"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 580px"
+                  style={{ aspectRatio: '16/9' }}
+                  className="w-full h-auto object-cover rounded-3xl shadow-[0_16px_48px_rgba(15,23,42,0.10)] border border-slate-200/90 group-hover:shadow-[0_20px_56px_rgba(15,23,42,0.15)] transition-all duration-300"
                 />
               </div>
             </div>

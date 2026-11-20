@@ -176,8 +176,9 @@ const schemaGraph = {
         caption: 'Economic Courier & eCS World Wide Express Bhilwara Official Brand Logo',
       },
       image: [
-        'https://www.economiccourierbhilwara.in/assets/og/economic-courier-social.jpg',
+        'https://www.economiccourierbhilwara.in/assets/hero/hero-economic-courier-bhilwara-hub.webp',
         'https://www.economiccourierbhilwara.in/assets/office/economic-courier-bhilwara-storefront.webp',
+        'https://www.economiccourierbhilwara.in/assets/og/economic-courier-social.jpg',
       ],
       founder: {
         '@type': 'Person',
