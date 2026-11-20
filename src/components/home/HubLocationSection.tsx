@@ -18,7 +18,7 @@ import { getMediaUrl } from '@/lib/cloudinary';
 
 export function HubLocationSection() {
   const verifiedAddress =
-    'Opposite New Cloth Market, Railway Staff Quarter Area, Bhilwara, Rajasthan 311001';
+    'Opposite New Cloth Market, Bhilwara, Rajasthan 311001';
   const verifiedLandmark =
     'Opposite New Cloth Market · Pur Road / Railway Station Sector';
   const googleMapsUrl = 'https://www.google.com/maps?cid=10996568267146601883';

@@ -85,7 +85,7 @@ const aboutJsonLd = {
         name: 'Economic Courier / eCS World Wide Express',
         address: {
           '@type': 'PostalAddress',
-          streetAddress: 'Opposite New Cloth Market, Railway Staff Quarter Area, Pur Road',
+          streetAddress: 'Opposite New Cloth Market, Pur Road',
           addressLocality: 'Bhilwara',
           addressRegion: 'Rajasthan',
           postalCode: '311001',

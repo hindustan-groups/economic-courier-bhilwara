@@ -166,7 +166,7 @@ export function Footer() {
               >
                 <MapPin className="w-4 h-4 text-[#DC2626] shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
                 <span className="leading-snug">
-                  Opposite New Cloth Market, Railway Staff Quarter Area, Pur Road / Station Sector, Bhilwara (RJ) 311001
+                  Opposite New Cloth Market, Pur Road / Station Sector, Bhilwara (RJ) 311001
                 </span>
               </a>
 
@@ -324,7 +324,7 @@ export function Footer() {
               &copy; {currentYear} Economic Courier &bull; eCS World Wide Express. All rights reserved.
             </p>
             <p className="text-[11px] text-slate-500">
-              Central Hub: Opposite New Cloth Market,Bhilwara Rajasthan 311001
+              Central Hub: Opposite New Cloth Market, Bhilwara, Rajasthan 311001
             </p>
           </div>
 

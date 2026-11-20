@@ -418,7 +418,7 @@ export function ContactView() {
                   </h2>
                 </div>
                 <p className="text-xs text-slate-600 leading-relaxed font-normal">
-                  Railway Staff Quarter Area, Pur Road, Bhilwara 311001. Certified digital scale on site.
+                  Pur Road, Bhilwara 311001. Certified digital scale on site.
                 </p>
               </div>
 
@@ -507,7 +507,7 @@ export function ContactView() {
                     Economic Courier &amp; eCS World Wide Express
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                    Opposite New Cloth Market, Railway Staff Quarter Area, Pur Road, Bhilwara, Rajasthan 311001.
+                    Opposite New Cloth Market, Pur Road, Bhilwara, Rajasthan 311001.
                   </p>
                 </div>
 

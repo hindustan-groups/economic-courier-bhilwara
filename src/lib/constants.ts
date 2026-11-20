@@ -34,7 +34,7 @@ export const BUSINESS_DATA: BusinessData = {
 
   // Verified office address from Google Business Profile
   physicalAddressPlaceholder:
-    'Opposite New Cloth Market, Railway Staff Quarter Area, Bhilwara, Rajasthan 311001',
+    'Opposite New Cloth Market, Bhilwara, Rajasthan 311001',
   addressVerified: true,
 
   operatingHoursPlaceholder:

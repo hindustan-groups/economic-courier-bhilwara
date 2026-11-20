@@ -47,7 +47,7 @@ export const FAQ_ITEMS: FAQItem[] = [
     categoryLabel: 'Hub Location & Hours',
     question: 'Where is the main Economic Courier hub in Bhilwara, and what are counter timings?',
     answer:
-      'Our central dispatch counter is located Opposite New Cloth Market, Railway Staff Quarter Area, Pur Road / Station Sector, Bhilwara (Rajasthan 311001). Operating hours are Monday to Saturday: 9:30 AM – 8:30 PM, and Sunday: 10:00 AM – 2:00 PM (Emergency Dispatch Desk) for walk-in bookings and same-day linehaul dispatches.',
+      'Our central dispatch counter is located Opposite New Cloth Market, Pur Road / Station Sector, Bhilwara (Rajasthan 311001). Operating hours are Monday to Saturday: 9:30 AM – 8:30 PM, and Sunday: 10:00 AM – 2:00 PM (Emergency Dispatch Desk) for walk-in bookings and same-day linehaul dispatches.',
     highlight: 'Opposite New Cloth Market · Open Mon–Sat 9:30 AM – 8:30 PM',
   },
   {

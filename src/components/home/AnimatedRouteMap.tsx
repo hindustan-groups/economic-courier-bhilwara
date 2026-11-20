@@ -483,13 +483,8 @@ export function AnimatedRouteMap() {
       const viewportHeight = window.innerHeight;
       const isMobile = window.innerWidth < 768;
 
-      const enterOffset = viewportHeight * 0.75;
-      const exitOffset = viewportHeight * 0.2;
-      const totalScrollable = rect.height + enterOffset - exitOffset;
-      const scrolled = enterOffset - rect.top;
       let rawProgress = 0;
 
-      let rawProgress = scrolled / totalScrollable;
       if (!isMobile) {
         // Desktop / Tablet (Panoramic Road):
         // Journey starts when container enters lower viewport (82% of screen)

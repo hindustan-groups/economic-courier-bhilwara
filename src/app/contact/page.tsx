@@ -85,7 +85,7 @@ const contactJsonLd = {
         email: 'economiccourierbhilwara@gmail.com',
         address: {
           '@type': 'PostalAddress',
-          streetAddress: 'Opposite New Cloth Market, Railway Staff Quarter Area, Pur Road / Station Sector',
+          streetAddress: 'Opposite New Cloth Market, Pur Road / Station Sector',
           addressLocality: 'Bhilwara',
           addressRegion: 'Rajasthan',
           postalCode: '311001',

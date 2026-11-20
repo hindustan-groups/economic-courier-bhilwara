@@ -160,7 +160,7 @@ To complete the local search domination in Bhilwara, the business owner should e
 1. **Business Title:** `Economic Courier / eCS World Wide Express`
 2. **Primary Category:** `Courier Service`
 3. **Secondary Categories:** `Logistics Service`, `Shipping and Mailing Service`, `Air Freight Service`
-4. **Address:** `Opposite New Cloth Market, Railway Staff Quarter Area, Pur Road / Station Sector, Bhilwara, Rajasthan 311001`
+4. **Address:** `Opposite New Cloth Market, Pur Road / Station Sector, Bhilwara, Rajasthan 311001`
 5. **Operating Hours:**
    - Monday to Saturday: `09:30 AM – 08:30 PM`
    - Sunday: `10:00 AM – 02:00 PM`

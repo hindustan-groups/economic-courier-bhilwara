@@ -81,7 +81,7 @@ const jsonLd = {
       url: 'https://www.economiccourierbhilwara.in',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Opposite New Cloth Market, Railway Staff Quarter Area',
+        streetAddress: 'Opposite New Cloth Market',
         addressLocality: 'Bhilwara',
         addressRegion: 'Rajasthan',
         postalCode: '311001',

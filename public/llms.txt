@@ -7,7 +7,7 @@
 - **Legal / Common Name:** Economic Courier
 - **Brand Identity:** eCS World Wide Express (eCS Express)
 - **Primary Category:** Courier Service, Express Parcel Delivery, Air Cargo Logistics
-- **Central Hub Location:** Opposite New Cloth Market, Railway Staff Quarter Area, Pur Road / Station Sector, Bhilwara, Rajasthan 311001, India
+- **Central Hub Location:** Opposite New Cloth Market, Pur Road / Station Sector, Bhilwara, Rajasthan 311001, India
 - **Coordinates:** 25.3444° N, 74.6366° E
 - **Official Website:** https://www.economiccourierbhilwara.in
 - **Customer Helpline:** +91 89551 44444
@@ -41,7 +41,7 @@
 ## Key Local Coverage Areas in Bhilwara
 - Pur Road & Textile Market Corridor
 - New Cloth Market (Opposite Central Hub)
-- Railway Staff Quarter Area & Station Sector
+- Station Sector & Pur Road Corridor
 - RIICO Industrial Area (Bhilwara)
 - Hamirgarh Industrial Area
 - Mandpam Weaving Belt
