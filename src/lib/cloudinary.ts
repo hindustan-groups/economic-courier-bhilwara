@@ -145,14 +145,6 @@ export const CLOUDINARY_MEDIA_REGISTRY: Record<string, { publicId: string; type:
     publicId: 'economic-courier/images/chandra-shekhar-panecha',
     type: 'image',
   },
-  '/assets/office/economic-courier-bhilwara-storefront.webp': {
-    publicId: 'economic-courier/images/economic-courier-bhilwara-storefront',
-    type: 'image',
-  },
-  '/assets/office/economic-courier-bhilwara-storefront.jpg': {
-    publicId: 'economic-courier/images/economic-courier-bhilwara-storefront-jpg',
-    type: 'image',
-  },
   '/assets/logo/ecs-logo-header.png': {
     publicId: 'economic-courier/images/ecs-logo-header',
     type: 'image',

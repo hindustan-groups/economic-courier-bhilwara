@@ -487,12 +487,12 @@ export default function HomePage() {
             <div className="lg:col-span-6 relative flex justify-center lg:justify-start">
               <div className="relative w-full max-w-[540px]">
                 <Image
-                  src={getMediaUrl('/assets/office/economic-courier-bhilwara-storefront.webp', { type: 'image' })}
-                  alt="Economic Courier central hub storefront and booking office Opposite New Cloth Market on Pur Road, Bhilwara"
-                  title="Economic Courier Bhilwara — Central Booking Hub & Storefront, Pur Road"
-                  width={680}
-                  height={383}
-                  quality={85}
+                  src={getMediaUrl('/assets/office/economic-courier-bhilwara-hub-storefront.webp', { type: 'image' })}
+                  alt="Economic Courier Bhilwara central booking hub and storefront office Opposite New Cloth Market on Pur Road Bhilwara, with walk-in parcel intake counter"
+                  title="Economic Courier Bhilwara — Central Booking Hub & Storefront Counter, Pur Road | eCS World Wide Express"
+                  width={1024}
+                  height={575}
+                  quality={100}
                   loading="lazy"
                   className="w-full h-auto object-cover block mx-auto rounded-2xl shadow-[0_12px_36px_rgba(15,23,42,0.12)] border border-slate-200/90"
                 />

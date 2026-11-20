@@ -480,8 +480,9 @@ export function ContactView() {
               <div className="rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-sm space-y-4 p-5 sm:p-6">
                 <div className="relative w-full rounded-xl overflow-hidden aspect-[16/10] bg-slate-900 group">
                   <Image
-                    src={getMediaUrl('/assets/office/economic-courier-bhilwara-storefront.webp', { type: 'image' })}
+                    src={getMediaUrl('/assets/office/economic-courier-bhilwara-hub-storefront.webp', { type: 'image' })}
                     alt="Economic Courier Bhilwara Hub Walk-In Booking Counter and Facility, Pur Road"
+                    title="Economic Courier Bhilwara Hub — Opposite New Cloth Market, Pur Road"
                     fill
                     sizes="(max-width: 768px) 100vw, 420px"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
