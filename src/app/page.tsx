@@ -292,11 +292,6 @@ export default function HomePage() {
                     style={{ aspectRatio: '784/576' }}
                     className="w-full h-auto object-cover block transition-transform duration-500 hover:scale-[1.02]"
                   />
-                  {/* Subtle Authentic Hub Badge */}
-                  <div className="absolute bottom-3 left-3 sm:bottom-3.5 sm:left-3.5 z-10 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900/85 backdrop-blur-md border border-white/15 text-white text-[11px] font-bold shadow-md pointer-events-none">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                    <span>Central Hub · Pur Road, Bhilwara</span>
-                  </div>
                 </div>
               </div>
             </div>
