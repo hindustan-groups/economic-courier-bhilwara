@@ -31,26 +31,6 @@ To maintain absolute professional integrity when pitching to the business owner:
 
 ---
 
-## 4. Documentation Index
-
-Comprehensive documentation has been authored under [`docs/`](./docs/):
-
-| Document | Purpose |
-| :--- | :--- |
-| [**`AGENTS.md`**](./AGENTS.md) | Persistent rules of engagement and coding standards for AI agents & developers |
-| [**`docs/PRD.md`**](./docs/PRD.md) | Product Requirements Document: audiences, user journeys, scope, and criteria |
-| [**`docs/DESIGN.md`**](./docs/DESIGN.md) | Design tokens, color palette, typography, layout grid, radii, and UI components |
-| [**`docs/BRAND.md`**](./docs/BRAND.md) | Brand identity system, dual-name hierarchy, logo usage rules, and tone of voice |
-| [**`docs/CONTENT.md`**](./docs/CONTENT.md) | Content architecture, verified vs unverified business registry, and copy guide |
-| [**`docs/ARCHITECTURE.md`**](./docs/ARCHITECTURE.md) | Next.js App Router structure, component hierarchy, state boundaries, and data flow |
-| [**`docs/ANIMATIONS.md`**](./docs/ANIMATIONS.md) | Motion design guidelines, spring physics, scroll triggers, and a11y reduced motion |
-| [**`docs/SEO.md`**](./docs/SEO.md) | Technical & local Bhilwara SEO strategy, JSON-LD schemas, and meta frameworks |
-| [**`docs/ASSETS.md`**](./docs/ASSETS.md) | Photography protocols, logo asset specifications, and Instagram video embedding rules |
-| [**`docs/TESTING.md`**](./docs/TESTING.md) | QA test plans, cross-browser/device matrix, a11y audits, and performance budgets |
-| [**`docs/ROADMAP.md`**](./docs/ROADMAP.md) | Phased delivery schedule, phase gates, and pending client decision logs |
-
----
-
 ## 5. Technology Stack (Planned)
 
 - **Framework:** Next.js (App Router, Server Components + Client Islands)
@@ -62,26 +42,3 @@ Comprehensive documentation has been authored under [`docs/`](./docs/):
 
 ---
 
-## 6. Implementation Phases
-
-```
-Phase 0: Planning & Documentation (Current)
-   └── Complete PRD, Design System, Architecture & Testing Specs
-Phase 1: Project Scaffolding & Foundation
-   └── Next.js setup, CSS tokens, Layout, Header & Footer components
-Phase 2: High-Impact Home Page
-   └── Hero with tracking mockup, service grid, textile focus, CTA
-Phase 3: Client Proposal & Feedback Review
-   └── Interactive walkthrough with business owner, asset gathering
-Phase 4: Full Multi-Page Expansion
-   └── Dedicated Services, About Us, Rate Inquiry, Contact/Location
-Phase 5: QA, Performance, SEO & Production Launch
-```
-
----
-
-## 7. Current Project Status
-
-- **Phase:** **Phase 0 (Documentation & Technical Specification)**
-- **Application Code:** Not yet generated (per project governance rules).
-- **Next Step:** Review documentation and resolve key business questions before initiating Phase 1.
