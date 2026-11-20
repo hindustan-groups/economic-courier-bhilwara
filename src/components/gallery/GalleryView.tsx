@@ -85,6 +85,8 @@ export interface GalleryPhoto {
   category: 'hub' | 'textile' | 'fleet';
   imageSrc: string;
   aspect: 'landscape' | 'portrait';
+  width: number;
+  height: number;
 }
 
 const GALLERY_PHOTOS: GalleryPhoto[] = [
@@ -94,6 +96,8 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     category: 'hub',
     imageSrc: '/assets/gallery/gallery-storefront-day-entrance.webp',
     aspect: 'landscape',
+    width: 1600,
+    height: 900,
   },
   {
     id: 'photo-2',
@@ -101,6 +105,8 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     category: 'hub',
     imageSrc: '/assets/gallery/gallery-founder-central-counter-desk.webp',
     aspect: 'landscape',
+    width: 1600,
+    height: 900,
   },
   {
     id: 'photo-3',
@@ -108,6 +114,8 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     category: 'hub',
     imageSrc: '/assets/gallery/gallery-entrance-facade-lattice.webp',
     aspect: 'portrait',
+    width: 900,
+    height: 1600,
   },
   {
     id: 'photo-4',
@@ -115,6 +123,8 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     category: 'hub',
     imageSrc: '/assets/gallery/gallery-textile-market-corridor-view.webp',
     aspect: 'portrait',
+    width: 900,
+    height: 1600,
   },
   {
     id: 'photo-5',
@@ -122,6 +132,8 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     category: 'hub',
     imageSrc: '/assets/gallery/gallery-founder-storefront-entrance.webp',
     aspect: 'portrait',
+    width: 900,
+    height: 1600,
   },
   {
     id: 'photo-6',
@@ -129,6 +141,8 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     category: 'hub',
     imageSrc: '/assets/gallery/gallery-ecs-dispatch-hub-banner.webp',
     aspect: 'landscape',
+    width: 1600,
+    height: 900,
   },
   {
     id: 'photo-7',
@@ -136,6 +150,8 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     category: 'hub',
     imageSrc: '/assets/gallery/gallery-booking-reception-executive-desk.webp',
     aspect: 'landscape',
+    width: 1600,
+    height: 900,
   },
   {
     id: 'photo-8',
@@ -143,6 +159,8 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     category: 'hub',
     imageSrc: '/assets/gallery/gallery-founder-textile-market-courtyard.webp',
     aspect: 'portrait',
+    width: 900,
+    height: 1600,
   },
   {
     id: 'photo-9',
@@ -150,6 +168,8 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     category: 'hub',
     imageSrc: '/assets/gallery/gallery-sorting-shelves-pigeonholes.webp',
     aspect: 'portrait',
+    width: 900,
+    height: 1600,
   },
   {
     id: 'photo-10',
@@ -157,6 +177,8 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     category: 'hub',
     imageSrc: '/assets/gallery/gallery-electronic-platform-scale.webp',
     aspect: 'portrait',
+    width: 900,
+    height: 1600,
   },
   {
     id: 'photo-11',
@@ -164,6 +186,8 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     category: 'hub',
     imageSrc: '/assets/gallery/gallery-digital-booking-scale-workstation.webp',
     aspect: 'landscape',
+    width: 1600,
+    height: 900,
   },
   {
     id: 'photo-12',
@@ -171,6 +195,8 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     category: 'hub',
     imageSrc: '/assets/gallery/gallery-operations-executive-computer-desk.webp',
     aspect: 'landscape',
+    width: 1600,
+    height: 900,
   },
   {
     id: 'photo-13',
@@ -178,6 +204,8 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     category: 'textile',
     imageSrc: '/assets/gallery/gallery-textile-sample-bale-staging.webp',
     aspect: 'portrait',
+    width: 900,
+    height: 1600,
   },
   {
     id: 'photo-14',
@@ -185,6 +213,8 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     category: 'hub',
     imageSrc: '/assets/gallery/gallery-consignment-barcode-inspection.webp',
     aspect: 'portrait',
+    width: 900,
+    height: 1600,
   },
   {
     id: 'photo-15',
@@ -192,6 +222,8 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     category: 'hub',
     imageSrc: '/assets/gallery/gallery-central-courtyard-intake.webp',
     aspect: 'landscape',
+    width: 1600,
+    height: 900,
   },
   {
     id: 'photo-16',
@@ -199,6 +231,8 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     category: 'hub',
     imageSrc: '/assets/gallery/gallery-founder-docket-processing.webp',
     aspect: 'landscape',
+    width: 1600,
+    height: 900,
   },
   {
     id: 'photo-17',
@@ -206,6 +240,8 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     category: 'hub',
     imageSrc: '/assets/gallery/gallery-founder-waybill-clearance.webp',
     aspect: 'portrait',
+    width: 1200,
+    height: 1600,
   },
   {
     id: 'photo-18',
@@ -213,6 +249,8 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     category: 'fleet',
     imageSrc: '/assets/gallery/gallery-express-counter-parcel-handoff.webp',
     aspect: 'portrait',
+    width: 900,
+    height: 1600,
   },
   {
     id: 'photo-19',
@@ -220,6 +258,8 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     category: 'fleet',
     imageSrc: '/assets/gallery/gallery-carrier-partner-network-pillar.webp',
     aspect: 'portrait',
+    width: 900,
+    height: 1600,
   },
   {
     id: 'photo-20',
@@ -227,6 +267,8 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     category: 'hub',
     imageSrc: '/assets/gallery/gallery-storefront-signage-angle.webp',
     aspect: 'portrait',
+    width: 900,
+    height: 1600,
   },
   {
     id: 'photo-21',
@@ -234,15 +276,15 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     category: 'fleet',
     imageSrc: '/assets/gallery/gallery-express-network-counter-signage.webp',
     aspect: 'landscape',
+    width: 1600,
+    height: 900,
   },
 ];
 
-// ─── Reusable Editorial Photo Card Component ──────────────────────────────────
+// ─── Reusable Editorial Photo Card Component (Pinterest Masonry Card) ─────────
 interface EditorialPhotoCardProps {
   photo: GalleryPhoto;
   index: number;
-  aspectClass: string;
-  isHero?: boolean;
   priority?: boolean;
   onSelect: (index: number) => void;
 }
@@ -250,8 +292,6 @@ interface EditorialPhotoCardProps {
 function EditorialPhotoCard({
   photo,
   index,
-  aspectClass,
-  isHero = false,
   priority = false,
   onSelect,
 }: EditorialPhotoCardProps) {
@@ -260,25 +300,18 @@ function EditorialPhotoCard({
       type="button"
       onClick={() => onSelect(index)}
       aria-label={`View photograph: ${photo.title}`}
-      className={`group relative overflow-hidden bg-slate-100 border border-slate-200/90 hover:border-[#DC2626]/80 shadow-2xs hover:shadow-xl hover:-translate-y-1 active:scale-[0.98] transition-all duration-300 ease-out cursor-pointer select-none w-full min-w-0 text-left p-0 focus:outline-hidden focus:ring-2 focus:ring-[#DC2626] ${
-        isHero
-          ? 'rounded-2xl sm:rounded-3xl'
-          : 'rounded-xl sm:rounded-2xl'
-      } ${aspectClass}`}
+      className="group relative block w-full overflow-hidden rounded-xl sm:rounded-2xl bg-slate-100 border border-slate-200/90 hover:border-[#DC2626]/80 shadow-2xs hover:shadow-xl hover:-translate-y-1 active:scale-[0.98] transition-all duration-300 ease-out cursor-pointer select-none text-left p-0 focus:outline-hidden focus:ring-2 focus:ring-[#DC2626]"
     >
       <Image
         src={getMediaUrl(photo.imageSrc, { type: 'image' })}
         alt={photo.title}
         title={photo.title}
-        fill
+        width={photo.width}
+        height={photo.height}
         priority={priority || index < 4}
         loading={priority || index < 4 ? undefined : 'lazy'}
-        sizes={
-          isHero
-            ? '(max-width: 768px) 100vw, (max-width: 1240px) 66vw, 820px'
-            : '(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 360px'
-        }
-        className="object-cover group-hover:scale-[1.04] transition-transform duration-700 ease-out"
+        sizes="(max-width: 640px) 50vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+        className="w-full h-auto object-cover group-hover:scale-[1.03] transition-transform duration-500 ease-out block"
       />
 
       {/* Subtle bottom title overlay on mobile / hover on desktop */}
@@ -764,41 +797,27 @@ export function GalleryView() {
               </div>
             </div>
 
-            {/* Dynamic Responsive Operations Photo Grid (Mobile 1 or 2 cols • Tablet 2-3 cols • Desktop 3-4 cols) */}
+            {/* Pinterest-Style Responsive Multi-Column Masonry Layout */}
             <div
-              className={`grid ${
-                mobileLayout === 'grid' ? 'grid-cols-2' : 'grid-cols-1'
-              } sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-2.5 sm:gap-4 lg:gap-6`}
+              className={`${
+                mobileLayout === 'feed'
+                  ? 'columns-1 gap-4'
+                  : 'columns-2 sm:columns-2 md:columns-3 lg:columns-4 gap-3 sm:gap-4 lg:gap-5'
+              } [column-fill:_balance]`}
             >
-              {filteredPhotos.map((photo, idx) => {
-                const isLandscape = photo.aspect === 'landscape';
-                const isFirstHero = idx === 0 && (activeTab === 'all' || activeTab === 'photos');
-                const aspectClass = isFirstHero
-                  ? 'aspect-[16/10] sm:aspect-[16/9]'
-                  : isLandscape
-                    ? 'aspect-[4/3] sm:aspect-[16/10]'
-                    : 'aspect-[3/4] sm:aspect-[4/5]';
-
-                return (
-                  <div
-                    key={photo.id}
-                    className={`min-w-0 ${
-                      isFirstHero
-                        ? `${mobileLayout === 'grid' ? 'col-span-2' : 'col-span-1'} sm:col-span-2 md:col-span-2 lg:col-span-2`
-                        : 'col-span-1'
-                    }`}
-                  >
-                    <EditorialPhotoCard
-                      photo={photo}
-                      index={idx}
-                      aspectClass={aspectClass}
-                      isHero={isFirstHero}
-                      priority={idx < 4}
-                      onSelect={setLightboxIndex}
-                    />
-                  </div>
-                );
-              })}
+              {filteredPhotos.map((photo, idx) => (
+                <div
+                  key={photo.id}
+                  className="break-inside-avoid mb-3 sm:mb-4 lg:mb-5 block w-full"
+                >
+                  <EditorialPhotoCard
+                    photo={photo}
+                    index={idx}
+                    priority={idx < 4}
+                    onSelect={setLightboxIndex}
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </section>
