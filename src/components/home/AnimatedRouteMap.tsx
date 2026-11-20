@@ -6,6 +6,8 @@ import {
   CheckCircle2,
   Building2,
   ArrowRight,
+  Play,
+  RotateCcw,
 } from 'lucide-react';
 
 export interface RouteStopData {
@@ -203,6 +205,8 @@ export function AnimatedRouteMap() {
   // Animation progress refs
   const targetProgressRef = useRef(0);
   const currentProgressRef = useRef(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(false);
+  const autoPlayAnimRef = useRef<number | null>(null);
 
   const stopDistancesRef = useRef<number[]>([]);
   const mobStopDistancesRef = useRef<number[]>([]);
@@ -401,6 +405,41 @@ export function AnimatedRouteMap() {
     [totalLength, mobTotalLength]
   );
 
+  // Smooth automatic route tour (cinematic cruise across full road)
+  const startAutoTour = useCallback(() => {
+    if (autoPlayAnimRef.current !== null) {
+      cancelAnimationFrame(autoPlayAnimRef.current);
+    }
+    setIsAutoPlaying(true);
+    const startProgress = currentProgressRef.current >= 0.96 ? 0 : currentProgressRef.current;
+    currentProgressRef.current = startProgress;
+    renderRiders(startProgress);
+
+    const startTime = performance.now();
+    const duration = 4500; // 4.5 seconds smooth cinematic journey
+
+    const autoTourStep = (now: number) => {
+      const elapsed = now - startTime;
+      const t = Math.min(1, elapsed / duration);
+      // Easing: ease-in-out curve for natural motorcycle acceleration & deceleration
+      const eased = t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+      const progress = startProgress + (1 - startProgress) * Math.max(0, Math.min(1, eased));
+
+      currentProgressRef.current = progress;
+      targetProgressRef.current = progress;
+      renderRiders(progress);
+
+      if (t < 1) {
+        autoPlayAnimRef.current = requestAnimationFrame(autoTourStep);
+      } else {
+        autoPlayAnimRef.current = null;
+        setIsAutoPlaying(false);
+      }
+    };
+
+    autoPlayAnimRef.current = requestAnimationFrame(autoTourStep);
+  }, [renderRiders]);
+
   // Kick off requestAnimationFrame loop only when progress needs animation
   const startAnimation = useCallback(() => {
     if (animIdRef.current !== null) return;
@@ -422,7 +461,7 @@ export function AnimatedRouteMap() {
     animIdRef.current = requestAnimationFrame(updateRiders);
   }, [renderRiders]);
 
-  // Smooth scroll listener: only computes when near viewport and movement occurs
+  // Precision Viewport Scroll Listener: Ensures bike completes 100% of the road while fully visible on screen
   useEffect(() => {
     const container = containerRef.current;
     if (!container || !isNearViewport) return;
@@ -432,15 +471,41 @@ export function AnimatedRouteMap() {
       window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     const handleScroll = () => {
+      // If user starts scrolling manually while auto-tour is playing, cancel auto-tour smoothly
+      if (autoPlayAnimRef.current !== null) {
+        cancelAnimationFrame(autoPlayAnimRef.current);
+        autoPlayAnimRef.current = null;
+        setIsAutoPlaying(false);
+      }
+
       const rect = container.getBoundingClientRect();
       const viewportHeight = window.innerHeight;
+      const isMobile = window.innerWidth < 768;
 
-      const enterOffset = viewportHeight * 0.75;
-      const exitOffset = viewportHeight * 0.2;
-      const totalScrollable = rect.height + enterOffset - exitOffset;
-      const scrolled = enterOffset - rect.top;
+      let rawProgress = 0;
 
-      let rawProgress = scrolled / totalScrollable;
+      if (!isMobile) {
+        // Desktop / Tablet (Panoramic Road):
+        // Journey starts when container enters lower viewport (82% of screen)
+        const startY = viewportHeight * 0.82;
+        // Journey completes 100% when container reaches comfortable center-screen (12% of screen)
+        // This guarantees the road is 100% visible while bike arrives at Nimbahera!
+        const endY = viewportHeight * 0.12;
+        const scrollDistance = Math.max(100, startY - endY);
+        const currentScrolled = startY - rect.top;
+
+        rawProgress = currentScrolled / scrollDistance;
+      } else {
+        // Mobile (Serpentine Vertical Road ~960px tall):
+        // Journey starts when mobile road enters at 85% of screen
+        const startY = viewportHeight * 0.85;
+        // Finishes when user scrolls ~65% through the vertical road, keeping Nimbahera in direct view
+        const scrollDistance = Math.max(200, rect.height * 0.65);
+        const currentScrolled = startY - rect.top;
+
+        rawProgress = currentScrolled / scrollDistance;
+      }
+
       rawProgress = Math.max(0, Math.min(1, rawProgress));
 
       targetProgressRef.current = rawProgress;
@@ -461,6 +526,10 @@ export function AnimatedRouteMap() {
       if (animIdRef.current !== null) {
         cancelAnimationFrame(animIdRef.current);
         animIdRef.current = null;
+      }
+      if (autoPlayAnimRef.current !== null) {
+        cancelAnimationFrame(autoPlayAnimRef.current);
+        autoPlayAnimRef.current = null;
       }
     };
   }, [isNearViewport, renderRiders, startAnimation]);
@@ -506,6 +575,30 @@ export function AnimatedRouteMap() {
           </div>
 
           <div className="flex items-center gap-3 text-[11px]">
+            <button
+              type="button"
+              onClick={startAutoTour}
+              aria-label={isAutoPlaying ? 'Cruising circuit' : 'Tour route circuit'}
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 hover:bg-red-50 text-slate-700 hover:text-[#DC2626] font-bold border border-slate-200 hover:border-red-200 transition-all cursor-pointer shadow-2xs active:scale-95"
+            >
+              {isAutoPlaying ? (
+                <>
+                  <span className="w-2 h-2 rounded-full bg-[#DC2626] animate-ping" />
+                  <span>Cruising...</span>
+                </>
+              ) : hasCompleted ? (
+                <>
+                  <RotateCcw className="w-3 h-3 text-[#DC2626]" />
+                  <span>Replay Tour</span>
+                </>
+              ) : (
+                <>
+                  <Play className="w-3 h-3 fill-current text-[#DC2626]" />
+                  <span>Auto Tour</span>
+                </>
+              )}
+            </button>
+
             <span className="text-slate-500">
               Active Stop:{' '}
               <strong className="text-red-600 font-bold">
@@ -872,9 +965,34 @@ export function AnimatedRouteMap() {
               Mobile Route Transit
             </span>
           </div>
-          <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-bold border border-emerald-200">
-            Cutoff 10 AM
-          </span>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={startAutoTour}
+              aria-label={isAutoPlaying ? 'Cruising circuit' : 'Tour route circuit'}
+              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-slate-100 active:bg-red-50 text-slate-700 font-bold text-[10px] border border-slate-200 transition-all cursor-pointer"
+            >
+              {isAutoPlaying ? (
+                <>
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#DC2626] animate-ping" />
+                  <span>Cruising...</span>
+                </>
+              ) : hasCompleted ? (
+                <>
+                  <RotateCcw className="w-2.5 h-2.5 text-[#DC2626]" />
+                  <span>Replay</span>
+                </>
+              ) : (
+                <>
+                  <Play className="w-2.5 h-2.5 fill-current text-[#DC2626]" />
+                  <span>Auto Tour</span>
+                </>
+              )}
+            </button>
+            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-bold border border-emerald-200">
+              Cutoff 10 AM
+            </span>
+          </div>
         </div>
 
         {/* Mobile Serpentine Route Canvas */}
