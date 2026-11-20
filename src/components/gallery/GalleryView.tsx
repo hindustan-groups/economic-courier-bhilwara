@@ -78,131 +78,222 @@ const GALLERY_VIDEOS: GalleryVideo[] = [
   },
 ];
 
-// ─── Photo Gallery Data (Pure Photos Only) ────────────────────────────────────
+// ─── Photo Gallery Data (Authentic High-Resolution Operations Archive) ────────
 export interface GalleryPhoto {
   id: string;
   title: string;
   category: 'hub' | 'textile' | 'fleet';
   imageSrc: string;
+  aspect: 'landscape' | 'portrait';
+  width: number;
+  height: number;
 }
 
 const GALLERY_PHOTOS: GalleryPhoto[] = [
   {
     id: 'photo-1',
-    title: 'Commercial Textile Fabric Swatches & Parcel Packaging',
-    category: 'textile',
-    imageSrc: '/assets/services/card-textiles.webp',
+    title: 'Economic Courier Central Hub Storefront & Walk-in Booking Entrance',
+    category: 'hub',
+    imageSrc: '/assets/gallery/gallery-storefront-day-entrance.webp',
+    aspect: 'landscape',
+    width: 1600,
+    height: 900,
   },
   {
     id: 'photo-2',
-    title: 'Central Hub Dispatch Counter & Booking Team',
+    title: 'Founder Chandra Shekhar Panecha at Bhilwara Central Counter Desk',
     category: 'hub',
-    imageSrc: '/assets/office/about-collage.webp',
+    imageSrc: '/assets/gallery/gallery-founder-central-counter-desk.webp',
+    aspect: 'landscape',
+    width: 1600,
+    height: 900,
   },
   {
     id: 'photo-3',
-    title: 'Express Delivery Van Fleet & Staff Parcel Handoff',
-    category: 'fleet',
-    imageSrc: '/assets/hero/hero-courier.webp',
+    title: 'Hub Main Entrance Facade & Heritage Arch Architecture',
+    category: 'hub',
+    imageSrc: '/assets/gallery/gallery-entrance-facade-lattice.webp',
+    aspect: 'portrait',
+    width: 900,
+    height: 1600,
   },
   {
     id: 'photo-4',
-    title: 'Worldwide Air Express Cargo & Aircraft Staging',
-    category: 'fleet',
-    imageSrc: '/assets/services/card-international.webp',
+    title: 'Pur Road Textile Market Corridor & Central Branch Lane',
+    category: 'hub',
+    imageSrc: '/assets/gallery/gallery-textile-market-corridor-view.webp',
+    aspect: 'portrait',
+    width: 900,
+    height: 1600,
   },
   {
     id: 'photo-5',
-    title: 'Consignment Documentation, Dossiers & Mailers Desk',
+    title: 'Founder Chandra Shekhar Panecha at Hub Storefront Entrance',
     category: 'hub',
-    imageSrc: '/assets/services/card-documents.webp',
+    imageSrc: '/assets/gallery/gallery-founder-storefront-entrance.webp',
+    aspect: 'portrait',
+    width: 900,
+    height: 1600,
   },
   {
     id: 'photo-6',
-    title: 'All-India Domestic Surface Express Sorting Terminal',
-    category: 'fleet',
-    imageSrc: '/assets/services/card-domestic.webp',
+    title: 'Official eCS World Wide Express Dispatch Hub Banner & Helplines',
+    category: 'hub',
+    imageSrc: '/assets/gallery/gallery-ecs-dispatch-hub-banner.webp',
+    aspect: 'landscape',
+    width: 1600,
+    height: 900,
   },
   {
     id: 'photo-7',
-    title: 'Commercial Multi-Axle Linehaul Trucks & Staging Bay',
-    category: 'fleet',
-    imageSrc: '/assets/gallery/gallery-operations-hero.webp',
+    title: 'Customer Service Reception & Computerized Docket Entry Desk',
+    category: 'hub',
+    imageSrc: '/assets/gallery/gallery-booking-reception-executive-desk.webp',
+    aspect: 'landscape',
+    width: 1600,
+    height: 900,
   },
   {
     id: 'photo-8',
-    title: 'Central Logistics Hub Architecture & Multi-Bay Loading',
+    title: 'Founder Chandra Shekhar Panecha — 35+ Years Logistics Leadership',
     category: 'hub',
-    imageSrc: '/assets/hub-3d-model.webp',
+    imageSrc: '/assets/gallery/gallery-founder-textile-market-courtyard.webp',
+    aspect: 'portrait',
+    width: 900,
+    height: 1600,
   },
   {
     id: 'photo-9',
-    title: 'West India Air & Road Regional Transit Routing Map',
-    category: 'fleet',
-    imageSrc: '/assets/network/delivery-network-3d.webp',
+    title: 'Consignment Sorting Shelves & Regional Route Pigeonholes',
+    category: 'hub',
+    imageSrc: '/assets/gallery/gallery-sorting-shelves-pigeonholes.webp',
+    aspect: 'portrait',
+    width: 900,
+    height: 1600,
   },
   {
     id: 'photo-10',
-    title: 'Real-Time Consignment Barcode Flow & Docket Tracking',
+    title: 'Heavy Consignment Electronic Platform Scale & Staging Bay',
     category: 'hub',
-    imageSrc: '/assets/tracking-3d-model.webp',
+    imageSrc: '/assets/gallery/gallery-electronic-platform-scale.webp',
+    aspect: 'portrait',
+    width: 900,
+    height: 1600,
   },
   {
     id: 'photo-11',
-    title: 'Daily Linehaul Highway Corridor & Dedicated Routes',
-    category: 'fleet',
-    imageSrc: '/assets/routes/daily-dispatch-banner-hd.webp',
+    title: 'Digital Booking Workstation, Electronic Scale & Docket Generation',
+    category: 'hub',
+    imageSrc: '/assets/gallery/gallery-digital-booking-scale-workstation.webp',
+    aspect: 'landscape',
+    width: 1600,
+    height: 900,
   },
   {
     id: 'photo-12',
-    title: 'Railway Station Sector Walk-in Intake Counter',
+    title: 'Central Operations Control & Computerized Booking Desk',
     category: 'hub',
-    imageSrc: '/assets/social/reel-3-railway-station.jpg',
+    imageSrc: '/assets/gallery/gallery-operations-executive-computer-desk.webp',
+    aspect: 'landscape',
+    width: 1600,
+    height: 900,
   },
   {
     id: 'photo-13',
-    title: 'Bhilwara Central Facility & Evening Package Sorting',
-    category: 'hub',
-    imageSrc: '/assets/social/reel-4-bhilwara-hub.jpg',
+    title: 'Textile Sample Bale Staging & Evening Linehaul Dispatch Bay',
+    category: 'textile',
+    imageSrc: '/assets/gallery/gallery-textile-sample-bale-staging.webp',
+    aspect: 'portrait',
+    width: 900,
+    height: 1600,
   },
   {
     id: 'photo-14',
-    title: 'Main Walk-In Hub Floor & Customer Reception',
+    title: 'Consignment Barcode Verification & Safe Parcel Inspection',
     category: 'hub',
-    imageSrc: '/assets/social/reel-1-bhilwara-visit.jpg',
+    imageSrc: '/assets/gallery/gallery-consignment-barcode-inspection.webp',
+    aspect: 'portrait',
+    width: 900,
+    height: 1600,
   },
   {
     id: 'photo-15',
-    title: 'Multi-City Shipping Routing & National Trade Corridors',
-    category: 'fleet',
-    imageSrc: '/assets/how-it-works/how-shipping-works-desktop.webp',
+    title: 'Central Hub Booking Courtyard & Express Parcel Intake',
+    category: 'hub',
+    imageSrc: '/assets/gallery/gallery-central-courtyard-intake.webp',
+    aspect: 'landscape',
+    width: 1600,
+    height: 900,
   },
   {
     id: 'photo-16',
-    title: 'eCS International Priority Air Parcel Packaging Desk',
-    category: 'fleet',
-    imageSrc: '/assets/social/reel-2-international.jpg',
+    title: 'Founder Reviewing Consignment Manifests & Writing Booking Dockets',
+    category: 'hub',
+    imageSrc: '/assets/gallery/gallery-founder-docket-processing.webp',
+    aspect: 'landscape',
+    width: 1600,
+    height: 900,
   },
   {
     id: 'photo-17',
-    title: 'Internal Consignment Dispatch Bay & Sorting Floor',
+    title: 'Express Air Waybill Verification & Dispatch Clearance',
     category: 'hub',
-    imageSrc: '/assets/social/reel-inside-ecs.jpg',
+    imageSrc: '/assets/gallery/gallery-founder-waybill-clearance.webp',
+    aspect: 'portrait',
+    width: 1200,
+    height: 1600,
   },
   {
     id: 'photo-18',
-    title: 'Counter Booking Intake, Weighing & Docket Generation',
+    title: 'Express Courier Handoff & Customer Counter Booking Intake',
+    category: 'fleet',
+    imageSrc: '/assets/gallery/gallery-express-counter-parcel-handoff.webp',
+    aspect: 'portrait',
+    width: 900,
+    height: 1600,
+  },
+  {
+    id: 'photo-19',
+    title: 'Authorized Global Courier Network & Service Partner Showcase',
+    category: 'fleet',
+    imageSrc: '/assets/gallery/gallery-carrier-partner-network-pillar.webp',
+    aspect: 'portrait',
+    width: 900,
+    height: 1600,
+  },
+  {
+    id: 'photo-20',
+    title: 'High-Visibility Storefront Signage & Walk-in Booking Counter',
     category: 'hub',
-    imageSrc: '/assets/social/reel-1-inside-ecs.jpg',
+    imageSrc: '/assets/gallery/gallery-storefront-signage-angle.webp',
+    aspect: 'portrait',
+    width: 900,
+    height: 1600,
+  },
+  {
+    id: 'photo-21',
+    title: 'Express Network Hub & Dedicated Booking Counter Signage',
+    category: 'fleet',
+    imageSrc: '/assets/gallery/gallery-express-network-counter-signage.webp',
+    aspect: 'landscape',
+    width: 1600,
+    height: 900,
+  },
+  {
+    id: 'photo-22',
+    title: 'Economic Courier Central Hub Day Storefront & Booking Counter Entrance',
+    category: 'hub',
+    imageSrc: '/assets/gallery/gallery-storefront-day-facade.webp',
+    aspect: 'landscape',
+    width: 1600,
+    height: 900,
   },
 ];
 
-// ─── Reusable Editorial Photo Card Component ──────────────────────────────────
+// ─── Reusable Editorial Photo Card Component (Pinterest Masonry Card) ─────────
 interface EditorialPhotoCardProps {
   photo: GalleryPhoto;
   index: number;
-  aspectClass: string;
-  isHero?: boolean;
   priority?: boolean;
   onSelect: (index: number) => void;
 }
@@ -210,8 +301,6 @@ interface EditorialPhotoCardProps {
 function EditorialPhotoCard({
   photo,
   index,
-  aspectClass,
-  isHero = false,
   priority = false,
   onSelect,
 }: EditorialPhotoCardProps) {
@@ -220,29 +309,31 @@ function EditorialPhotoCard({
       type="button"
       onClick={() => onSelect(index)}
       aria-label={`View photograph: ${photo.title}`}
-      className={`group relative overflow-hidden bg-slate-100 border border-slate-200/90 hover:border-slate-400/90 shadow-2xs hover:shadow-2xl hover:-translate-y-1 active:scale-[0.98] transition-all duration-300 ease-out cursor-pointer select-none w-full min-w-0 text-left p-0 focus:outline-hidden focus:ring-2 focus:ring-[#DC2626] ${
-        isHero
-          ? 'rounded-2xl sm:rounded-3xl'
-          : 'rounded-xl sm:rounded-2xl'
-      } ${aspectClass}`}
+      className="group relative block w-full overflow-hidden rounded-xl sm:rounded-2xl bg-slate-100 border border-slate-200/90 hover:border-[#DC2626]/80 shadow-2xs hover:shadow-xl hover:-translate-y-1 active:scale-[0.98] transition-all duration-300 ease-out cursor-pointer select-none text-left p-0 focus:outline-hidden focus:ring-2 focus:ring-[#DC2626]"
     >
       <Image
         src={getMediaUrl(photo.imageSrc, { type: 'image' })}
         alt={photo.title}
-        fill
-        priority={priority || index < 3}
-        sizes={
-          isHero
-            ? '(max-width: 768px) 100vw, (max-width: 1240px) 66vw, 820px'
-            : '(max-width: 640px) 50vw, (max-width: 1024px) 50vw, 420px'
-        }
-        className="object-cover group-hover:scale-[1.04] transition-transform duration-700 ease-out"
+        title={photo.title}
+        width={photo.width}
+        height={photo.height}
+        priority={priority || index < 4}
+        loading={priority || index < 4 ? undefined : 'lazy'}
+        sizes="(max-width: 640px) 50vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+        className="w-full h-auto object-cover group-hover:scale-[1.03] transition-transform duration-500 ease-out block"
       />
 
+      {/* Subtle bottom title overlay on mobile / hover on desktop */}
+      <div className="absolute inset-x-0 bottom-0 p-2 sm:p-2.5 bg-gradient-to-t from-slate-950/85 via-slate-950/40 to-transparent opacity-95 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+        <p className="text-[11px] sm:text-xs text-white font-bold line-clamp-1 leading-snug">
+          {photo.title}
+        </p>
+      </div>
+
       {/* Pure Editorial Hover Veil & Maximize Icon */}
-      <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
-        <span className="w-10 h-10 rounded-full bg-white/35 backdrop-blur-md flex items-center justify-center text-white shadow-xl transform scale-90 group-hover:scale-100 transition-transform duration-300">
-          <Maximize2 className="w-4 h-4" />
+      <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
+        <span className="w-8 h-8 rounded-full bg-black/50 backdrop-blur-md flex items-center justify-center text-white shadow-md">
+          <Maximize2 className="w-3.5 h-3.5" />
         </span>
       </div>
     </button>
@@ -413,6 +504,25 @@ export function GalleryView() {
   const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const [mobileLayout, setMobileLayout] = useState<'grid' | 'feed'>('grid');
+  const [numColumns, setNumColumns] = useState<number>(4);
+
+  // Responsive column count for balanced shortest-column-first masonry
+  useEffect(() => {
+    const updateColumns = () => {
+      const w = window.innerWidth;
+      if (w < 640) {
+        setNumColumns(mobileLayout === 'feed' ? 1 : 2);
+      } else if (w < 1024) {
+        setNumColumns(3);
+      } else {
+        setNumColumns(4);
+      }
+    };
+
+    updateColumns();
+    window.addEventListener('resize', updateColumns);
+    return () => window.removeEventListener('resize', updateColumns);
+  }, [mobileLayout]);
 
   // Touch Swipe coordinates for phone gallery sliding
   const touchStartX = useRef<number | null>(null);
@@ -425,6 +535,28 @@ export function GalleryView() {
     if (activeTab === 'fleet') return photo.category === 'fleet' || photo.category === 'textile';
     return false;
   });
+
+  // Distribute filtered photos into columns using Shortest-Column-First algorithm (True Pinterest Masonry)
+  const photoColumns = React.useMemo(() => {
+    const cols: { photo: GalleryPhoto; originalIndex: number }[][] = Array.from(
+      { length: numColumns },
+      () => []
+    );
+    const heights = new Array(numColumns).fill(0);
+
+    filteredPhotos.forEach((photo, idx) => {
+      let minCol = 0;
+      for (let c = 1; c < numColumns; c++) {
+        if (heights[c] < heights[minCol]) {
+          minCol = c;
+        }
+      }
+      cols[minCol].push({ photo, originalIndex: idx });
+      heights[minCol] += photo.height / photo.width;
+    });
+
+    return cols;
+  }, [filteredPhotos, numColumns]);
 
   const handlePrevPhoto = (e?: React.MouseEvent) => {
     if (e) e.stopPropagation();
@@ -715,220 +847,32 @@ export function GalleryView() {
               </div>
             </div>
 
-            {/* Curated Editorial Story Blocks (8 Isolated Passages • Zero Overlap • Zero Cutoff) */}
-            {filteredPhotos.length === GALLERY_PHOTOS.length ? (
-              <div className="space-y-2.5 sm:space-y-6">
-                {/* Passage 1: Lead Hero Showcase + Vertical Duet (Photos 0, 1, 2) */}
-                <div className={`grid ${
-                  mobileLayout === 'grid' ? 'grid-cols-2' : 'grid-cols-1'
-                } md:grid-cols-12 gap-2.5 sm:gap-4 lg:gap-6 items-stretch`}>
-                  <div className={`${mobileLayout === 'grid' ? 'col-span-2' : 'col-span-1'} md:col-span-8 min-w-0`}>
+            {/* Pinterest-Style Balanced Responsive Multi-Column Masonry (Zero Side Gaps • Perfect Height Alignment) */}
+            <div
+              className={`grid ${
+                numColumns === 1
+                  ? 'grid-cols-1 gap-4'
+                  : numColumns === 2
+                  ? 'grid-cols-2 gap-3 sm:gap-4'
+                  : numColumns === 3
+                  ? 'grid-cols-3 gap-4 lg:gap-5'
+                  : 'grid-cols-4 gap-3 sm:gap-4 lg:gap-5'
+              }`}
+            >
+              {photoColumns.map((colPhotos, colIdx) => (
+                <div key={colIdx} className="flex flex-col gap-3 sm:gap-4 lg:gap-5 min-w-0">
+                  {colPhotos.map(({ photo, originalIndex }) => (
                     <EditorialPhotoCard
-                      photo={filteredPhotos[0]}
-                      index={0}
-                      aspectClass="aspect-[16/10] md:aspect-auto h-full min-h-[200px] sm:min-h-[350px] md:min-h-[490px]"
-                      isHero
-                      priority
-                      onSelect={setLightboxIndex}
-                    />
-                  </div>
-                  <div className={`${mobileLayout === 'grid' ? 'col-span-2' : 'col-span-1'} md:col-span-4 min-w-0 grid grid-cols-2 md:grid-cols-1 gap-2.5 sm:gap-4 lg:gap-6 justify-between`}>
-                    <div className="min-w-0">
-                      <EditorialPhotoCard
-                        photo={filteredPhotos[1]}
-                        index={1}
-                        aspectClass="aspect-[4/3] md:aspect-[16/10] h-full min-h-[120px] sm:min-h-[170px] md:min-h-[233px]"
-                        priority
-                        onSelect={setLightboxIndex}
-                      />
-                    </div>
-                    <div className="min-w-0">
-                      <EditorialPhotoCard
-                        photo={filteredPhotos[2]}
-                        index={2}
-                        aspectClass="aspect-[4/3] md:aspect-[16/10] h-full min-h-[120px] sm:min-h-[170px] md:min-h-[233px]"
-                        priority
-                        onSelect={setLightboxIndex}
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Passage 2: Ground Fleet Diptych (Photos 3, 4) */}
-                <div className={`grid ${
-                  mobileLayout === 'grid' ? 'grid-cols-2' : 'grid-cols-1'
-                } sm:grid-cols-12 gap-2.5 sm:gap-4 lg:gap-6 items-stretch`}>
-                  <div className={`${mobileLayout === 'grid' ? 'col-span-1' : 'col-span-1'} sm:col-span-7 min-w-0`}>
-                    <EditorialPhotoCard
-                      photo={filteredPhotos[3]}
-                      index={3}
-                      aspectClass="aspect-[4/3] sm:aspect-[16/10]"
-                      onSelect={setLightboxIndex}
-                    />
-                  </div>
-                  <div className={`${mobileLayout === 'grid' ? 'col-span-1' : 'col-span-1'} sm:col-span-5 min-w-0`}>
-                    <EditorialPhotoCard
-                      photo={filteredPhotos[4]}
-                      index={4}
-                      aspectClass="aspect-[4/3] sm:aspect-[16/10] sm:aspect-auto h-full min-h-[120px] sm:min-h-[220px]"
-                      onSelect={setLightboxIndex}
-                    />
-                  </div>
-                </div>
-
-                {/* Passage 3: Intake Desk & Documentation Pair (Photos 5, 6) */}
-                <div className={`grid ${
-                  mobileLayout === 'grid' ? 'grid-cols-2' : 'grid-cols-1'
-                } sm:grid-cols-12 gap-2.5 sm:gap-4 lg:gap-6 items-stretch`}>
-                  <div className={`${mobileLayout === 'grid' ? 'col-span-1' : 'col-span-1'} sm:col-span-5 min-w-0`}>
-                    <EditorialPhotoCard
-                      photo={filteredPhotos[5]}
-                      index={5}
-                      aspectClass="aspect-[4/3] sm:aspect-[16/10] sm:aspect-auto h-full min-h-[120px] sm:min-h-[240px]"
-                      onSelect={setLightboxIndex}
-                    />
-                  </div>
-                  <div className={`${mobileLayout === 'grid' ? 'col-span-1' : 'col-span-1'} sm:col-span-7 min-w-0`}>
-                    <EditorialPhotoCard
-                      photo={filteredPhotos[6]}
-                      index={6}
-                      aspectClass="aspect-[4/3] sm:aspect-[16/10]"
-                      onSelect={setLightboxIndex}
-                    />
-                  </div>
-                </div>
-
-                {/* Passage 4: Industrial Freight & Textile Triplet (Photos 7, 8, 9) */}
-                <div className={`grid ${
-                  mobileLayout === 'grid' ? 'grid-cols-2' : 'grid-cols-1'
-                } sm:grid-cols-2 md:grid-cols-3 gap-2.5 sm:gap-4 lg:gap-6`}>
-                  <div className="min-w-0 col-span-1">
-                    <EditorialPhotoCard
-                      photo={filteredPhotos[7]}
-                      index={7}
-                      aspectClass="aspect-[4/3]"
-                      onSelect={setLightboxIndex}
-                    />
-                  </div>
-                  <div className="min-w-0 col-span-1">
-                    <EditorialPhotoCard
-                      photo={filteredPhotos[8]}
-                      index={8}
-                      aspectClass="aspect-[4/3]"
-                      onSelect={setLightboxIndex}
-                    />
-                  </div>
-                  <div className={`min-w-0 ${mobileLayout === 'grid' ? 'col-span-2' : 'col-span-1'} sm:col-span-2 md:col-span-1`}>
-                    <EditorialPhotoCard
-                      photo={filteredPhotos[9]}
-                      index={9}
-                      aspectClass="aspect-[16/9] sm:aspect-[4/3]"
-                      onSelect={setLightboxIndex}
-                    />
-                  </div>
-                </div>
-
-                {/* Passage 5: Highway Transit & Station Sector (Photos 10, 11) */}
-                <div className={`grid ${
-                  mobileLayout === 'grid' ? 'grid-cols-2' : 'grid-cols-1'
-                } sm:grid-cols-12 gap-2.5 sm:gap-4 lg:gap-6 items-stretch`}>
-                  <div className={`${mobileLayout === 'grid' ? 'col-span-1' : 'col-span-1'} sm:col-span-8 min-w-0`}>
-                    <EditorialPhotoCard
-                      photo={filteredPhotos[10]}
-                      index={10}
-                      aspectClass="aspect-[4/3] sm:aspect-[16/9]"
-                      onSelect={setLightboxIndex}
-                    />
-                  </div>
-                  <div className={`${mobileLayout === 'grid' ? 'col-span-1' : 'col-span-1'} sm:col-span-4 min-w-0`}>
-                    <EditorialPhotoCard
-                      photo={filteredPhotos[11]}
-                      index={11}
-                      aspectClass="aspect-[4/3] sm:aspect-[16/10] sm:aspect-auto h-full min-h-[120px] sm:min-h-[220px]"
-                      onSelect={setLightboxIndex}
-                    />
-                  </div>
-                </div>
-
-                {/* Passage 6: Operational Evening Hub & Walk-In Floor (Photos 12, 13) */}
-                <div className={`grid ${
-                  mobileLayout === 'grid' ? 'grid-cols-2' : 'grid-cols-1'
-                } sm:grid-cols-12 gap-2.5 sm:gap-4 lg:gap-6 items-stretch`}>
-                  <div className={`${mobileLayout === 'grid' ? 'col-span-1' : 'col-span-1'} sm:col-span-5 min-w-0`}>
-                    <EditorialPhotoCard
-                      photo={filteredPhotos[12]}
-                      index={12}
-                      aspectClass="aspect-[4/3] sm:aspect-[16/10] sm:aspect-auto h-full min-h-[120px] sm:min-h-[240px]"
-                      onSelect={setLightboxIndex}
-                    />
-                  </div>
-                  <div className={`${mobileLayout === 'grid' ? 'col-span-1' : 'col-span-1'} sm:col-span-7 min-w-0`}>
-                    <EditorialPhotoCard
-                      photo={filteredPhotos[13]}
-                      index={13}
-                      aspectClass="aspect-[4/3] sm:aspect-[16/10]"
-                      onSelect={setLightboxIndex}
-                    />
-                  </div>
-                </div>
-
-                {/* Passage 7: National Routing & Air Parcel Dispatch Triplet (Photos 14, 15, 16) */}
-                <div className={`grid ${
-                  mobileLayout === 'grid' ? 'grid-cols-2' : 'grid-cols-1'
-                } sm:grid-cols-2 md:grid-cols-3 gap-2.5 sm:gap-4 lg:gap-6`}>
-                  <div className="min-w-0 col-span-1">
-                    <EditorialPhotoCard
-                      photo={filteredPhotos[14]}
-                      index={14}
-                      aspectClass="aspect-[4/3]"
-                      onSelect={setLightboxIndex}
-                    />
-                  </div>
-                  <div className="min-w-0 col-span-1">
-                    <EditorialPhotoCard
-                      photo={filteredPhotos[15]}
-                      index={15}
-                      aspectClass="aspect-[4/3]"
-                      onSelect={setLightboxIndex}
-                    />
-                  </div>
-                  <div className={`min-w-0 ${mobileLayout === 'grid' ? 'col-span-2' : 'col-span-1'} sm:col-span-2 md:col-span-1`}>
-                    <EditorialPhotoCard
-                      photo={filteredPhotos[16]}
-                      index={16}
-                      aspectClass="aspect-[16/9] sm:aspect-[4/3]"
-                      onSelect={setLightboxIndex}
-                    />
-                  </div>
-                </div>
-
-                {/* Passage 8: Grand Booking Counter Finale (Photo 17) */}
-                <div className="w-full min-w-0">
-                  <EditorialPhotoCard
-                    photo={filteredPhotos[17]}
-                    index={17}
-                    aspectClass="aspect-[16/9] sm:aspect-[21/9]"
-                    onSelect={setLightboxIndex}
-                  />
-                </div>
-              </div>
-            ) : (
-              /* Filtered View (Clean Responsive Editorial Grid) */
-              <div className={`grid ${
-                mobileLayout === 'grid' ? 'grid-cols-2' : 'grid-cols-1'
-              } sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-4 lg:gap-6`}>
-                {filteredPhotos.map((photo, idx) => (
-                  <div key={photo.id} className="min-w-0">
-                    <EditorialPhotoCard
+                      key={photo.id}
                       photo={photo}
-                      index={idx}
-                      aspectClass="aspect-[4/3]"
+                      index={originalIndex}
+                      priority={originalIndex < 4}
                       onSelect={setLightboxIndex}
                     />
-                  </div>
-                ))}
-              </div>
-            )}
+                  ))}
+                </div>
+              ))}
+            </div>
           </div>
         </section>
       )}
