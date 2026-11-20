@@ -77,20 +77,23 @@ export function HubLocationSection() {
             </p>
           </div>
 
-          {/* Right: 3D Model Building (Isometric Hub Render) */}
+          {/* Right: Authentic Bhilwara Central Dispatch Counter Desk Photo */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[280px] xs:max-w-[340px] sm:max-w-[380px] lg:max-w-[420px]">
-              <Image
-                src={getMediaUrl('/assets/hub-3d-model.webp', { type: 'image' })}
-                alt="Economic Courier & eCS World Wide Express Central Dispatch Hub 3D Architectural Model Bhilwara"
-                title="Economic Courier Central Dispatch Hub — Opposite New Cloth Market, Pur Road, Bhilwara"
-                width={480}
-                height={320}
-                loading="lazy"
-                quality={85}
-                style={{ aspectRatio: '480/320' }}
-                className="w-full h-auto object-contain drop-shadow-[0_12px_28px_rgba(15,23,42,0.12)] hover:scale-[1.03] transition-transform duration-300 pointer-events-auto"
-              />
+            <div className="relative w-full max-w-[420px] sm:max-w-[460px] lg:max-w-[500px]">
+              <div className="relative rounded-2xl sm:rounded-3xl p-1.5 sm:p-2 bg-white border border-slate-200/90 shadow-[0_16px_40px_rgba(15,23,42,0.1)] hover:shadow-[0_20px_50px_rgba(15,23,42,0.14)] transition-all duration-300">
+                <div className="relative w-full overflow-hidden rounded-xl sm:rounded-2xl">
+                  <Image
+                    src={getMediaUrl('/assets/office/central-hub-dispatch-counter.webp', { type: 'image' })}
+                    alt="Economic Courier central hub dispatch desk and booking counter operations Opposite New Cloth Market on Pur Road, Bhilwara"
+                    title="Economic Courier Bhilwara Central Dispatch Counter — Pur Road Hub | eCS World Wide Express"
+                    width={1024}
+                    height={576}
+                    loading="lazy"
+                    quality={100}
+                    className="w-full h-auto object-cover block mx-auto transition-transform duration-500 hover:scale-[1.01]"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
