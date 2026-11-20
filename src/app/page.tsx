@@ -276,10 +276,10 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right Hero Image Card (Authentic Bhilwara Central Hub Storefront Photo) */}
+            {/* Right Hero Image Card (Authentic Bhilwara Central Hub Storefront Photo with Brand Red Border Line) */}
             <div className="lg:col-span-6 relative flex flex-col justify-center">
-              <div className="relative w-full h-full min-h-[380px] sm:min-h-[440px] lg:min-h-[480px] xl:min-h-[520px] rounded-[28px] sm:rounded-[32px] p-2 sm:p-2.5 bg-white border border-slate-200/90 shadow-[0_20px_50px_rgba(15,23,42,0.12)] hover:shadow-[0_24px_60px_rgba(15,23,42,0.16)] transition-all duration-300 flex flex-col">
-                <div className="relative w-full h-full flex-1 overflow-hidden rounded-[20px] sm:rounded-[24px] bg-slate-100 min-h-[360px] sm:min-h-[420px] lg:min-h-[460px] xl:min-h-[500px]">
+              <div className="relative w-full h-full min-h-[360px] sm:min-h-[420px] lg:min-h-[450px] xl:min-h-[480px] rounded-[28px] sm:rounded-[32px] p-2 sm:p-2.5 bg-white border-2 border-[#DC2626] shadow-[0_20px_50px_rgba(220,38,38,0.12)] hover:shadow-[0_24px_60px_rgba(220,38,38,0.18)] transition-all duration-300 flex flex-col">
+                <div className="relative w-full h-full flex-1 overflow-hidden rounded-[20px] sm:rounded-[24px] bg-slate-100 min-h-[340px] sm:min-h-[400px] lg:min-h-[430px] xl:min-h-[460px]">
                   <Image
                     src={getMediaUrl('/assets/hero/hero-economic-courier-bhilwara-hub.webp', { type: 'image' })}
                     alt="Economic Courier central dispatch and booking hub storefront Opposite New Cloth Market on Pur Road Bhilwara, with eCS international express logistics counter"
