@@ -279,6 +279,15 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     width: 1600,
     height: 900,
   },
+  {
+    id: 'photo-22',
+    title: 'Economic Courier Central Hub Day Storefront & Booking Counter Entrance',
+    category: 'hub',
+    imageSrc: '/assets/gallery/gallery-storefront-day-facade.webp',
+    aspect: 'landscape',
+    width: 1600,
+    height: 900,
+  },
 ];
 
 // ─── Reusable Editorial Photo Card Component (Pinterest Masonry Card) ─────────
@@ -495,6 +504,25 @@ export function GalleryView() {
   const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const [mobileLayout, setMobileLayout] = useState<'grid' | 'feed'>('grid');
+  const [numColumns, setNumColumns] = useState<number>(4);
+
+  // Responsive column count for balanced shortest-column-first masonry
+  useEffect(() => {
+    const updateColumns = () => {
+      const w = window.innerWidth;
+      if (w < 640) {
+        setNumColumns(mobileLayout === 'feed' ? 1 : 2);
+      } else if (w < 1024) {
+        setNumColumns(3);
+      } else {
+        setNumColumns(4);
+      }
+    };
+
+    updateColumns();
+    window.addEventListener('resize', updateColumns);
+    return () => window.removeEventListener('resize', updateColumns);
+  }, [mobileLayout]);
 
   // Touch Swipe coordinates for phone gallery sliding
   const touchStartX = useRef<number | null>(null);
@@ -507,6 +535,28 @@ export function GalleryView() {
     if (activeTab === 'fleet') return photo.category === 'fleet' || photo.category === 'textile';
     return false;
   });
+
+  // Distribute filtered photos into columns using Shortest-Column-First algorithm (True Pinterest Masonry)
+  const photoColumns = React.useMemo(() => {
+    const cols: { photo: GalleryPhoto; originalIndex: number }[][] = Array.from(
+      { length: numColumns },
+      () => []
+    );
+    const heights = new Array(numColumns).fill(0);
+
+    filteredPhotos.forEach((photo, idx) => {
+      let minCol = 0;
+      for (let c = 1; c < numColumns; c++) {
+        if (heights[c] < heights[minCol]) {
+          minCol = c;
+        }
+      }
+      cols[minCol].push({ photo, originalIndex: idx });
+      heights[minCol] += photo.height / photo.width;
+    });
+
+    return cols;
+  }, [filteredPhotos, numColumns]);
 
   const handlePrevPhoto = (e?: React.MouseEvent) => {
     if (e) e.stopPropagation();
@@ -797,25 +847,29 @@ export function GalleryView() {
               </div>
             </div>
 
-            {/* Pinterest-Style Responsive Multi-Column Masonry Layout */}
+            {/* Pinterest-Style Balanced Responsive Multi-Column Masonry (Zero Side Gaps • Perfect Height Alignment) */}
             <div
-              className={`${
-                mobileLayout === 'feed'
-                  ? 'columns-1 gap-4'
-                  : 'columns-2 sm:columns-2 md:columns-3 lg:columns-4 gap-3 sm:gap-4 lg:gap-5'
-              } [column-fill:_balance]`}
+              className={`grid ${
+                numColumns === 1
+                  ? 'grid-cols-1 gap-4'
+                  : numColumns === 2
+                  ? 'grid-cols-2 gap-3 sm:gap-4'
+                  : numColumns === 3
+                  ? 'grid-cols-3 gap-4 lg:gap-5'
+                  : 'grid-cols-4 gap-3 sm:gap-4 lg:gap-5'
+              }`}
             >
-              {filteredPhotos.map((photo, idx) => (
-                <div
-                  key={photo.id}
-                  className="break-inside-avoid mb-3 sm:mb-4 lg:mb-5 block w-full"
-                >
-                  <EditorialPhotoCard
-                    photo={photo}
-                    index={idx}
-                    priority={idx < 4}
-                    onSelect={setLightboxIndex}
-                  />
+              {photoColumns.map((colPhotos, colIdx) => (
+                <div key={colIdx} className="flex flex-col gap-3 sm:gap-4 lg:gap-5 min-w-0">
+                  {colPhotos.map(({ photo, originalIndex }) => (
+                    <EditorialPhotoCard
+                      key={photo.id}
+                      photo={photo}
+                      index={originalIndex}
+                      priority={originalIndex < 4}
+                      onSelect={setLightboxIndex}
+                    />
+                  ))}
                 </div>
               ))}
             </div>
