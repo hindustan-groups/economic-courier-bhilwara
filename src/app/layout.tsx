@@ -177,6 +177,7 @@ const schemaGraph = {
       },
       image: [
         'https://www.economiccourierbhilwara.in/assets/hero/hero-economic-courier-bhilwara-hub.webp',
+        'https://www.economiccourierbhilwara.in/assets/office/economic-courier-bhilwara-hub-storefront.webp',
         'https://www.economiccourierbhilwara.in/assets/office/economic-courier-bhilwara-storefront.webp',
         'https://www.economiccourierbhilwara.in/assets/og/economic-courier-social.jpg',
       ],

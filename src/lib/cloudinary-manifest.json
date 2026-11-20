@@ -239,26 +239,6 @@
     "width": 1364,
     "height": 2048
   },
-  "/assets/office/economic-courier-bhilwara-storefront.webp": {
-    "localPath": "/assets/office/economic-courier-bhilwara-storefront.webp",
-    "publicId": "economic-courier/images/economic-courier-bhilwara-storefront",
-    "secureUrl": "https://res.cloudinary.com/a4pwyvog/image/upload/v1794654109/economic-courier/images/economic-courier-bhilwara-storefront.webp",
-    "bytes": 140676,
-    "format": "webp",
-    "type": "image",
-    "width": 1360,
-    "height": 766
-  },
-  "/assets/office/economic-courier-bhilwara-storefront.jpg": {
-    "localPath": "/assets/office/economic-courier-bhilwara-storefront.jpg",
-    "publicId": "economic-courier/images/economic-courier-bhilwara-storefront-jpg",
-    "secureUrl": "https://res.cloudinary.com/a4pwyvog/image/upload/v1794654110/economic-courier/images/economic-courier-bhilwara-storefront-jpg.jpg",
-    "bytes": 236548,
-    "format": "jpg",
-    "type": "image",
-    "width": 1360,
-    "height": 766
-  },
   "/assets/logo/ecs-logo-header.png": {
     "localPath": "/assets/logo/ecs-logo-header.png",
     "publicId": "economic-courier/images/ecs-logo-header",
