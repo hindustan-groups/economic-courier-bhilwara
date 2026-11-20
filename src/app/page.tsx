@@ -276,21 +276,21 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right Hero Image Card (Authentic Bhilwara Central Hub Storefront & Founder Photo) */}
+            {/* Right Hero Image Card (Authentic Bhilwara Central Hub Storefront Photo) */}
             <div className="lg:col-span-6 relative flex justify-center lg:justify-end items-center">
-              <div className="relative w-full max-w-[540px] xl:max-w-[580px] rounded-[28px] p-2 sm:p-2.5 bg-white border border-slate-200/90 shadow-[0_20px_50px_rgba(15,23,42,0.12)] hover:shadow-[0_24px_60px_rgba(15,23,42,0.16)] transition-all duration-300">
+              <div className="relative w-full max-w-[580px] xl:max-w-[620px] rounded-[28px] p-2 sm:p-2.5 bg-white border border-slate-200/90 shadow-[0_20px_50px_rgba(15,23,42,0.12)] hover:shadow-[0_24px_60px_rgba(15,23,42,0.16)] transition-all duration-300">
                 <div className="relative w-full overflow-hidden rounded-[20px] sm:rounded-[22px] bg-slate-100">
                   <Image
                     src={getMediaUrl('/assets/hero/hero-economic-courier-bhilwara-hub.webp', { type: 'image' })}
-                    alt="Economic Courier central booking hub storefront Opposite New Cloth Market on Pur Road Bhilwara, with founder Chandra Shekhar Panecha"
-                    title="Economic Courier Bhilwara — Central Booking Hub & Storefront, Pur Road (Founder Chandra Shekhar Panecha)"
-                    width={784}
+                    alt="Economic Courier central dispatch and booking hub storefront Opposite New Cloth Market on Pur Road Bhilwara, with eCS international express logistics counter"
+                    title="Economic Courier Bhilwara Central Booking Hub — Opposite New Cloth Market, Pur Road | eCS World Wide Express"
+                    width={1024}
                     height={576}
-                    quality={95}
+                    quality={100}
                     priority
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 580px"
-                    style={{ aspectRatio: '784/576' }}
-                    className="w-full h-auto object-cover block transition-transform duration-500 hover:scale-[1.02]"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 620px"
+                    style={{ aspectRatio: '16/9' }}
+                    className="w-full h-auto object-cover block transition-transform duration-500 hover:scale-[1.01]"
                   />
                 </div>
               </div>
