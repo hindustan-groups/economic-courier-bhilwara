@@ -11,91 +11,91 @@ interface ShowcasePhoto {
   imageSrc: string;
 }
 
-// Track 1 Photos (8 Authentic Ground Operations Photos)
+// Track 1 Photos (8 Authentic Ground Operations Photos — Central Bhilwara Hub)
 const TRACK_1_PHOTOS: ShowcasePhoto[] = [
   {
     id: 'track1-1',
-    title: 'Commercial Textile Fabric Swatches & Parcel Packaging',
-    imageSrc: '/assets/services/card-textiles.webp',
+    title: 'Economic Courier Central Hub Day Storefront & Booking Entrance',
+    imageSrc: '/assets/gallery/gallery-storefront-day-facade.webp',
   },
   {
     id: 'track1-2',
-    title: 'Central Hub Dispatch Counter & Booking Desk',
-    imageSrc: '/assets/office/about-collage.webp',
+    title: 'Founder Chandra Shekhar Panecha at Bhilwara Central Counter Desk',
+    imageSrc: '/assets/gallery/gallery-founder-central-counter-desk.webp',
   },
   {
     id: 'track1-3',
-    title: 'Express Delivery Van Fleet & Staff Parcel Handoff',
-    imageSrc: '/assets/hero/hero-courier.webp',
+    title: 'Customer Service Reception & Computerized Docket Entry Desk',
+    imageSrc: '/assets/gallery/gallery-booking-reception-executive-desk.webp',
   },
   {
     id: 'track1-4',
-    title: 'Worldwide Air Express Cargo & Aircraft Staging',
-    imageSrc: '/assets/services/card-international.webp',
+    title: 'Digital Booking Workstation, Electronic Scale & Docket Generation',
+    imageSrc: '/assets/gallery/gallery-digital-booking-scale-workstation.webp',
   },
   {
     id: 'track1-5',
-    title: 'Consignment Documentation, Dossiers & Mailers Desk',
-    imageSrc: '/assets/services/card-documents.webp',
+    title: 'Founder Reviewing Consignment Manifests & Writing Booking Dockets',
+    imageSrc: '/assets/gallery/gallery-founder-docket-processing.webp',
   },
   {
     id: 'track1-6',
-    title: 'All-India Domestic Surface Express Sorting Terminal',
-    imageSrc: '/assets/services/card-domestic.webp',
+    title: 'Official eCS World Wide Express Dispatch Hub Banner & Helplines',
+    imageSrc: '/assets/gallery/gallery-ecs-dispatch-hub-banner.webp',
   },
   {
     id: 'track1-7',
-    title: 'Commercial Multi-Axle Linehaul Trucks & Staging Bay',
-    imageSrc: '/assets/business-fleet-3d.webp',
+    title: 'Central Operations Control & Computerized Booking Desk',
+    imageSrc: '/assets/gallery/gallery-operations-executive-computer-desk.webp',
   },
   {
     id: 'track1-8',
-    title: 'Central Logistics Hub Architecture & Multi-Bay Loading',
-    imageSrc: '/assets/hub-3d-model.webp',
+    title: 'Central Hub Booking Courtyard & Express Parcel Intake',
+    imageSrc: '/assets/gallery/gallery-central-courtyard-intake.webp',
   },
 ];
 
-// Track 2 Photos (8 Additional Authentic Ground Operations Photos)
+// Track 2 Photos (8 Additional Authentic Ground Operations Photos — Sorting & Packaging)
 const TRACK_2_PHOTOS: ShowcasePhoto[] = [
   {
     id: 'track2-1',
-    title: 'Railway Station Sector Walk-in Intake Counter',
-    imageSrc: '/assets/social/reel-3-railway-station.jpg',
+    title: 'High-Visibility Storefront Signage & Walk-in Booking Counter',
+    imageSrc: '/assets/gallery/gallery-storefront-signage-angle.webp',
   },
   {
     id: 'track2-2',
-    title: 'Bhilwara Central Facility & Evening Package Sorting',
-    imageSrc: '/assets/social/reel-4-bhilwara-hub.jpg',
+    title: 'Consignment Sorting Shelves & Regional Route Pigeonholes',
+    imageSrc: '/assets/gallery/gallery-sorting-shelves-pigeonholes.webp',
   },
   {
     id: 'track2-3',
-    title: 'West India Air & Road Regional Transit Routing Map',
-    imageSrc: '/assets/network/delivery-network-3d.webp',
+    title: 'Heavy Consignment Electronic Platform Scale & Staging Bay',
+    imageSrc: '/assets/gallery/gallery-electronic-platform-scale.webp',
   },
   {
     id: 'track2-4',
-    title: 'Real-Time Consignment Barcode Flow & Docket Tracking',
-    imageSrc: '/assets/tracking-3d-model.webp',
+    title: 'Founder Chandra Shekhar Panecha — 35+ Years Logistics Leadership',
+    imageSrc: '/assets/gallery/gallery-founder-textile-market-courtyard.webp',
   },
   {
     id: 'track2-5',
-    title: 'Daily Linehaul Highway Corridor & Dedicated Routes',
-    imageSrc: '/assets/routes/daily-dispatch-banner-hd.webp',
+    title: 'Textile Sample Bale Staging & Evening Linehaul Dispatch Bay',
+    imageSrc: '/assets/gallery/gallery-textile-sample-bale-staging.webp',
   },
   {
     id: 'track2-6',
-    title: 'Main Walk-In Hub Floor & Customer Reception',
-    imageSrc: '/assets/social/reel-1-bhilwara-visit.jpg',
+    title: 'Consignment Barcode Verification & Safe Parcel Inspection',
+    imageSrc: '/assets/gallery/gallery-consignment-barcode-inspection.webp',
   },
   {
     id: 'track2-7',
-    title: 'Multi-City Shipping Routing & National Trade Corridors',
-    imageSrc: '/assets/how-it-works/how-shipping-works-desktop.webp',
+    title: 'Founder Chandra Shekhar Panecha at Hub Storefront Entrance',
+    imageSrc: '/assets/gallery/gallery-founder-storefront-entrance.webp',
   },
   {
     id: 'track2-8',
-    title: 'eCS International Priority Air Parcel Packaging Desk',
-    imageSrc: '/assets/social/reel-2-international.jpg',
+    title: 'Authorized Global Courier Network & Service Partner Showcase',
+    imageSrc: '/assets/gallery/gallery-carrier-partner-network-pillar.webp',
   },
 ];
 
@@ -198,7 +198,7 @@ export function OperationsShowcaseSection() {
           href="/gallery"
           className="inline-flex items-center gap-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white text-xs sm:text-sm font-bold px-6 py-3.5 rounded-full shadow-md hover:shadow-lg transition-all active:scale-95"
         >
-          <span>Explore Full Operations Gallery (18 Photos &amp; Video Reels)</span>
+          <span>Explore Full Operations Gallery (22 Photos &amp; Video Reels)</span>
           <ArrowRight className="w-4 h-4 text-white" />
         </Link>
         <span className="text-xs text-slate-400 font-medium hidden sm:inline">
