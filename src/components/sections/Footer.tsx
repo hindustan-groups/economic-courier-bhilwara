@@ -324,7 +324,7 @@ export function Footer() {
               &copy; {currentYear} Economic Courier &bull; eCS World Wide Express. All rights reserved.
             </p>
             <p className="text-[11px] text-slate-500">
-              Central Hub: Opposite New Cloth Market, Railway Staff Quarter Area, Bhilwara, Rajasthan 311001
+              Central Hub: Opposite New Cloth Market,Bhilwara Rajasthan 311001
             </p>
           </div>
 

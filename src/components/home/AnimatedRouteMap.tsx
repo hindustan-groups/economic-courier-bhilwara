@@ -461,6 +461,7 @@ export function AnimatedRouteMap() {
     animIdRef.current = requestAnimationFrame(updateRiders);
   }, [renderRiders]);
 
+  // Smooth scroll listener: only computes when near viewport and movement occurs
   // Precision Viewport Scroll Listener: Ensures bike completes 100% of the road while fully visible on screen
   useEffect(() => {
     const container = containerRef.current;
@@ -482,8 +483,13 @@ export function AnimatedRouteMap() {
       const viewportHeight = window.innerHeight;
       const isMobile = window.innerWidth < 768;
 
+      const enterOffset = viewportHeight * 0.75;
+      const exitOffset = viewportHeight * 0.2;
+      const totalScrollable = rect.height + enterOffset - exitOffset;
+      const scrolled = enterOffset - rect.top;
       let rawProgress = 0;
 
+      let rawProgress = scrolled / totalScrollable;
       if (!isMobile) {
         // Desktop / Tablet (Panoramic Road):
         // Journey starts when container enters lower viewport (82% of screen)
@@ -965,6 +971,9 @@ export function AnimatedRouteMap() {
               Mobile Route Transit
             </span>
           </div>
+          <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-bold border border-emerald-200">
+            Cutoff 10 AM
+          </span>
           <div className="flex items-center gap-2">
             <button
               type="button"
