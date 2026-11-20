@@ -147,9 +147,9 @@ export default function HomePage() {
         className="relative pt-6 pb-8 lg:pt-10 lg:pb-12 overflow-hidden bg-[radial-gradient(ellipse_at_top_left,#EBF5FB_0%,#F8FBFE_50%,#FFFFFF_100%)]"
       >
         <div className="max-w-[1240px] xl:max-w-[1360px] 2xl:max-w-[1480px] min-[1800px]:max-w-[1560px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-stretch">
             {/* Left Content Column */}
-            <div className="lg:col-span-6 space-y-5">
+            <div className="lg:col-span-6 space-y-5 flex flex-col justify-center">
               {/* Location Badge & Authority Kicker */}
               <div className="flex flex-wrap items-center gap-2">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-red-50 via-white to-red-50/50 border border-red-200/80 text-red-700 text-[11px] font-extrabold tracking-widest uppercase shadow-xs ">
@@ -277,20 +277,18 @@ export default function HomePage() {
             </div>
 
             {/* Right Hero Image Card (Authentic Bhilwara Central Hub Storefront Photo) */}
-            <div className="lg:col-span-6 relative flex justify-center lg:justify-end items-center">
-              <div className="relative w-full max-w-[580px] xl:max-w-[620px] rounded-[28px] p-2 sm:p-2.5 bg-white border border-slate-200/90 shadow-[0_20px_50px_rgba(15,23,42,0.12)] hover:shadow-[0_24px_60px_rgba(15,23,42,0.16)] transition-all duration-300">
-                <div className="relative w-full overflow-hidden rounded-[20px] sm:rounded-[22px] bg-slate-100">
+            <div className="lg:col-span-6 relative flex flex-col justify-center">
+              <div className="relative w-full h-full min-h-[380px] sm:min-h-[440px] lg:min-h-[480px] xl:min-h-[520px] rounded-[28px] sm:rounded-[32px] p-2 sm:p-2.5 bg-white border border-slate-200/90 shadow-[0_20px_50px_rgba(15,23,42,0.12)] hover:shadow-[0_24px_60px_rgba(15,23,42,0.16)] transition-all duration-300 flex flex-col">
+                <div className="relative w-full h-full flex-1 overflow-hidden rounded-[20px] sm:rounded-[24px] bg-slate-100 min-h-[360px] sm:min-h-[420px] lg:min-h-[460px] xl:min-h-[500px]">
                   <Image
                     src={getMediaUrl('/assets/hero/hero-economic-courier-bhilwara-hub.webp', { type: 'image' })}
                     alt="Economic Courier central dispatch and booking hub storefront Opposite New Cloth Market on Pur Road Bhilwara, with eCS international express logistics counter"
                     title="Economic Courier Bhilwara Central Booking Hub — Opposite New Cloth Market, Pur Road | eCS World Wide Express"
-                    width={1024}
-                    height={576}
+                    fill
                     quality={100}
                     priority
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 620px"
-                    style={{ aspectRatio: '16/9' }}
-                    className="w-full h-auto object-cover block transition-transform duration-500 hover:scale-[1.01]"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 720px"
+                    className="object-cover object-center block transition-transform duration-500 hover:scale-[1.01]"
                   />
                 </div>
               </div>
