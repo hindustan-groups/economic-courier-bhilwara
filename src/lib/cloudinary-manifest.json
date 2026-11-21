@@ -268,5 +268,15 @@
     "type": "image",
     "width": 3072,
     "height": 1728
+  },
+  "/assets/gallery/gallery-founder-chandra-shekhar-panecha-executive.webp": {
+    "localPath": "/assets/gallery/gallery-founder-chandra-shekhar-panecha-executive.webp",
+    "publicId": "economic-courier/images/gallery-founder-chandra-shekhar-panecha-executive",
+    "secureUrl": "https://res.cloudinary.com/a4pwyvog/image/upload/v1795239045/economic-courier/images/gallery-founder-chandra-shekhar-panecha-executive.webp",
+    "bytes": 125226,
+    "format": "webp",
+    "type": "image",
+    "width": 768,
+    "height": 1024
   }
 }

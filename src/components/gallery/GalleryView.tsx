@@ -288,6 +288,15 @@ const GALLERY_PHOTOS: GalleryPhoto[] = [
     width: 1600,
     height: 900,
   },
+  {
+    id: 'photo-23',
+    title: 'Founder & Director Chandra Shekhar Panecha — Executive Consultation Desk',
+    category: 'hub',
+    imageSrc: '/assets/gallery/gallery-founder-chandra-shekhar-panecha-executive.webp',
+    aspect: 'portrait',
+    width: 768,
+    height: 1024,
+  },
 ];
 
 // ─── Reusable Editorial Photo Card Component (Pinterest Masonry Card) ─────────

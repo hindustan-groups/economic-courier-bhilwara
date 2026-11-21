@@ -58,6 +58,7 @@ const ASSETS_TO_UPLOAD = [
   { localPath: 'public/assets/how-it-works/how-shipping-works-desktop.webp', publicId: 'economic-courier/images/how-shipping-works-desktop', type: 'image' },
   { localPath: 'public/assets/how-it-works/how-shipping-works-mobile.webp', publicId: 'economic-courier/images/how-shipping-works-mobile', type: 'image' },
   { localPath: 'public/assets/gallery/gallery-operations-hero.webp', publicId: 'economic-courier/images/gallery-operations-hero', type: 'image' },
+  { localPath: 'public/assets/gallery/gallery-founder-chandra-shekhar-panecha-executive.webp', publicId: 'economic-courier/images/gallery-founder-chandra-shekhar-panecha-executive', type: 'image' },
 ];
 
 async function uploadFile({ localPath, publicId, type }) {

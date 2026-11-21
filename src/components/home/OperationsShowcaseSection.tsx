@@ -53,6 +53,11 @@ const TRACK_1_PHOTOS: ShowcasePhoto[] = [
     title: 'Central Hub Booking Courtyard & Express Parcel Intake',
     imageSrc: '/assets/gallery/gallery-central-courtyard-intake.webp',
   },
+  {
+    id: 'track1-9',
+    title: 'Founder & Director Chandra Shekhar Panecha — Executive Consultation Desk',
+    imageSrc: '/assets/gallery/gallery-founder-chandra-shekhar-panecha-executive.webp',
+  },
 ];
 
 // Track 2 Photos (8 Additional Authentic Ground Operations Photos — Sorting & Packaging)
