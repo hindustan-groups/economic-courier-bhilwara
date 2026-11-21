@@ -157,6 +157,10 @@ export const CLOUDINARY_MEDIA_REGISTRY: Record<string, { publicId: string; type:
     publicId: 'economic-courier/images/gallery-operations-hero',
     type: 'image',
   },
+  '/assets/gallery/gallery-founder-chandra-shekhar-panecha-executive.webp': {
+    publicId: 'economic-courier/images/gallery-founder-chandra-shekhar-panecha-executive',
+    type: 'image',
+  },
 };
 
 /**

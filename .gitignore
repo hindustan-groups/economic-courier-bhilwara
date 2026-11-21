@@ -54,3 +54,4 @@ next-env.d.ts
 # Design reference assets (not required for website deployment)
 /public/assets/ref-*.png
 /public/assets/reference-ui.jpg
+/WEB-Photo/
